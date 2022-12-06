@@ -9,9 +9,9 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo-1">
-      <img class="main-header__logo-image" src="style/images/logo-main.png" width="33" height="37"
+      <img class="main-header__logo-image" src="img/logo-main.png" width="33" height="37"
         alt="Лого магазина Cat energy">
-      <img class="main-header__logo-image" src="style/images/logo-main-2.png" width="101" height="18"
+      <img class="main-header__logo-image" src="img/logo-main-2.png" width="101" height="18"
         alt="Магазин Cat energy">
     </a>
     <nav class="main-nav">
@@ -41,27 +41,25 @@
 
   <section class="main-form">
     <div class="main-form__wrapper">
-      <h1 class="main-form__title">Подбор программы</h1>
-      <p class="main-form__description">Заполните анкету, и мы подберем
-        программу питания для вашего кота</p>
-      <div class="main-form__info info">
-        <form class="info__form" action="#" method="post">
-          <p class="info__field info__name-field">
+      <form class="main-form__form" action="#" method="post">
+        <h1 class="main-form__title">Подбор программы</h1>
+        <p class="main-form__description">Заполните анкету, и мы подберем
+          программу питания для вашего кота</p>
+        <div class="main-form__info info">
+          <div class="info__field info__name-field">
             <label class="info__name-field-label" for="name">ИМЯ:*</label>
             <input class="info__name-field-input" type="text" id="name" name="name" placeholder="барсик">
-          </p>
-          <p class="info__field info__weight-field">
+          </div>
+          <div class="info__field info__weight-field">
             <label class="info__name-field-label" for="weight">Вес (кг):*</label>
             <input class="info__name-field-input" type="text" id="weight" name="weight" placeholder="7">
-          </p>
-          <p class="info__field info__old-field">
+          </div>
+          <div class="info__field info__old-field">
             <label class="info__name-field-label" for="old">Возраст (лет):</label>
             <input class="info__name-field-input" type="text" id="old" name="old" placeholder="7">
-          </p>
-        </form>
-      </div>
-      <div class="main-form__goal goal ">
-        <fieldset class="goal__fieldset">
+          </div>
+        </div>
+        <fieldset class="main-form__goal goal">
           <legend class="visually-hidden">Выберите цель</legend>
           <ul class="goal__variants">
             <li class="goal__slim">
@@ -87,31 +85,28 @@
             </li>
           </ul>
         </fieldset>
-      </div>
-      <div class="main-form__owner-contacts owner-contacts">
+        <fieldset class="main-form__owner-contacts owner-contacts">
           <legend class="owner-contacts__legend">Контактные данные
             (владельца кота)</legend>
-        <form class="owner-contacts__form" action="#" method="post">
-          <p class="owner-contacts__field owner-contacts__email-field">
+          <div class="owner-contacts__field owner-contacts__email-field">
             <label class="owner-contacts__name-field-label" for="email">E-mail:*</label>
             <input class="owner-contacts__name-field-input" type="text" id="email" name="email"
               placeholder="kuklachev@gmail.com">
-          </p>
-          <p class="owner-contacts__field owner-contacts__phone-field">
+          </div>
+          <div class="owner-contacts__field owner-contacts__phone-field">
             <label class="owner-contacts__name-field-label" for="phone">Телефон:*</label>
             <input class="owner-contacts__name-field-input" type="text" id="phone" name="phone"
               placeholder="8 (960) 900-60-90">
-          </p>
-        </form>
-      </div>
-      <div class="main-form__comment comment">
-        <label class="visually-hidden" for="comment-textarea">Комментарий</label>
-        <textarea class="comment__textarea" id="comment-textarea" placeholder="Расскажите обо всех повадках кота"
-          name="comment-textarea" required></textarea>
-      </div>
+          </div>
+        </fieldset>
+        <div class="main-form__comment comment">
+          <label class="visually-hidden" for="comment-textarea">Комментарий</label>
+          <textarea class="comment__textarea" id="comment-textarea" placeholder="Расскажите обо всех повадках кота"
+            name="comment-textarea" required></textarea>
+        </div>
 
-      <fieldset class="main-form__addition addition">
-        <legend class="addition__legend">Дополнительно</legend>
+        <fieldset class="main-form__addition addition">
+          <legend class="addition__legend">Дополнительно</legend>
           <label class="addition__control">
             <input class="visually-hidden addition__control-input" type="checkbox" name="add" value="sugarfree" checked>
             <span class="addition__control-mark">
@@ -136,9 +131,10 @@
             </span>
             <span class="addition__control-label">витамины</span>
           </label>
-      </fieldset>
-      <button class="main-form__button button">отправить заявку</button>
-      <p class="main-form__important">* — Обязательные поля</p>
+        </fieldset>
+        <button class="main-form__button button">отправить заявку</button>
+        <p class="main-form__important">* — Обязательные поля</p>
+      </form>
     </div>
   </section>
 
@@ -157,7 +153,7 @@
       </div>
       <div class="main-footer__logo logo">
         <a class="logo-link" href="index.html">
-          <img class="logo-name" src="style/images/logo-main-2.png" width="101" height="18" alt="Магазин Cat energy">
+          <img class="logo-name" src="img/logo-main-2.png" width="101" height="18" alt="Магазин Cat energy">
         </a>
       </div>
       <div class="main-footer__social social">
@@ -177,7 +173,7 @@
       <div class="main-footer__copyright copyright">
         <b class="copyright__text">HTML Academy</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="style/images/logo-academy.svg" width="27" height="34" alt="Лого HTML Academy">
+          <img src="img/logo-academy.svg" width="27" height="34" alt="Лого HTML Academy">
         </a>
       </div>
     </div>
