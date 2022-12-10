@@ -1,0 +1,9 @@
+
+.main-nav__link{
+    list-style: none;
+    text-transform: uppercase;
+
+    &--active{
+        border-bottom: 2px solid @green;
+    }
+}

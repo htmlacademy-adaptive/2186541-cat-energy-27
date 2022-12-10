@@ -9,34 +9,35 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo-1">
-      <img class="main-header__logo-image" src="img/logo-main.png" width="33" height="37"
-        alt="Лого магазина Cat energy">
-      <img class="main-header__logo-image" src="img/logo-main-2.png" width="101" height="18"
-        alt="Магазин Cat energy">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="main-header__wrapper">
+      <a class="main-header__logo-1">
+        <img class="main-header__logo-image" src="img/logo-main.png" width="33" height="37"
+          alt="Лого магазина Cat energy">
+        <img class="main-header__logo-image" src="img/logo-main-2.png" width="101" height="18" alt="Магазин Cat energy">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="main-container">
@@ -61,7 +62,9 @@
               <br>почти утратил способность лазить<br>
               по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <button class="programms__button">каталог slim</button>
+            <button class="programms__button">каталог slim
+              <svg class="programms__button-svg" width="32" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" d="M0 6h18"/><path d="m24 6-6.75 5.2V.8L24 6Z" fill="#000"/></svg>
+            </button>
           </li>
           <li class="programms__item programms__item--pro">
             <h3 class="programms__title">
@@ -71,15 +74,17 @@
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту
               нарастить необходимые мышцы!
             </p>
-            <button class="programms__button">каталог pro</button>
+            <button class="programms__button">каталог pro
+              <svg class="programms__button-svg" width="32" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" d="M0 6h18"/><path d="m24 6-6.75 5.2V.8L24 6Z" fill="#000"/></svg>
+            </button>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="principles">
-      <div class="principles-wrapper">
-        <h2 class="visually-hidden">Как это работает</h2>
+      <div class="principles__wrapper">
+        <h2 class="principles__title">Как это работает</h2>
         <ul class="principles__list">
           <li class="principles__item">
             <p class="principles__description principles__description--list">
