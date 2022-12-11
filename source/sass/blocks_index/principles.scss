@@ -8,7 +8,17 @@
 }
 
 .principles__list{
-    display:grid;
+    display:list-item;
     grid-template-columns: 60px 20px 300px;
-    gap:20px;
+    gap-row:20px;
+    list-style-type: none;
+}
+
+.principles__description{
+    font-family: 'Lato', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    grid-column: 3 / 4;
 }

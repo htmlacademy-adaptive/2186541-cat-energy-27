@@ -1,13 +1,18 @@
 .programms-wrapper {
     margin-top: 20px;
-    background-color: @basic-grey;
 }
 
 .programms__list {
     list-style: none;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
 }
 
+.programms__item{
+    background-color: $basic-grey;
+    padding:20px;
+    margin-bottom: 20px;
+}
 
 .programms__title {
     font-family: 'Oswald', Arial, sans-serif;
@@ -17,8 +22,7 @@
     line-height: 37px;
     margin-left: 91px;
     margin-top: 30px;
-    text-decoration: uppercase;
-
+    text-transform: uppercase;
 }
 
 .programms__description{
@@ -40,4 +44,5 @@
     font-size: 16px;
     line-height: 16px;
     padding: 16px;
+    text-transform: uppercase;
 }
