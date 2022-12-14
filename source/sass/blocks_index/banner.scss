@@ -1,44 +1,44 @@
-.banner{
-    background-color: $basic-green;
-    background-image: url("../img/banner.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    color:$white;
+.banner {
+  background-color: $basic-green;
+  background-image: url("../img/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: $white;
 }
 
-.banner__wrapper{
-    font-family: Oswald, Arial, sans-serif;
-    padding: 27px 35px;
+.banner__wrapper {
+  font-family: "Oswald", "Arial", sans-serif;
+  padding: 27px 35px;
 }
 
-.banner__title{
-    font-family: Oswald, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-    text-align: center;
+.banner__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
 }
 
-.banner__description{
-    font-family: Oswald, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 36px;
-    margin: 0;
-    text-transform: uppercase;
-    text-align: center;
+.banner__description {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 36px;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.banner__button{
-    padding: 7px 44px;
-    color: $white;
-    background-color: $basic-green;
-    text-transform: uppercase;
-    font-family: Oswald, Arial, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    border:none;
+.banner__button {
+  padding: 7px 44px;
+  color: $white;
+  background-color: $basic-green;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
 }

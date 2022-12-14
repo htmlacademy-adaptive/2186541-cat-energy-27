@@ -1,27 +1,27 @@
-.present{
-    background-color: rgba(104, 183, 56, 0.85);
-    background-image: url("../img/present.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    color:$white;
+.present {
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("../img/present.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: $white;
 }
 
-.present__wrapper{
-    margin-top: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 290px;
+.present__wrapper {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 290px;
 }
 
-.present__description{
-    text-align: center;
-    font-family: 'Lato', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    width:161px;
+.present__description {
+  text-align: center;
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  width: 161px;
 }
