@@ -25,3 +25,15 @@
   margin: 22px auto;
   text-align: center;
 }
+
+/*Планшетная версия*/
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

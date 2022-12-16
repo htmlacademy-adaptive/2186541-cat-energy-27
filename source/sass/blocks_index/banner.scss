@@ -42,3 +42,10 @@
   line-height: 18px;
   border: none;
 }
+
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .banner {
+    background-image: none;
+  }
+}
