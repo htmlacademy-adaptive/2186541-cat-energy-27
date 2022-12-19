@@ -8,8 +8,7 @@
 }
 
 .principles__list {
-  display: list-item;
-  grid-template-columns: 60px 20px 300px;
+  display: flex;
   grid-row-gap: 20px;
   list-style-type: none;
 }
@@ -21,4 +20,28 @@
   font-size: 14px;
   line-height: 18px;
   grid-column: 3 / 4;
+}
+
+
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .principles__list {
+    display: flex;
+    grid-row-gap: 37px;
+    grid-column-gap: 137px;
+    flex-wrap: wrap;
+  }
+
+  .principles__item {
+    width: 245px;
+  }
+}
+
+
+/*Десктоп*/
+@media (min-width: $desktop-width) {
+  .principles__item {
+    width: 245px;
+    grid-column-gap: 37px;
+  }
 }

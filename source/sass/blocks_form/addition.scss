@@ -18,3 +18,24 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+.addition__variants {
+  list-style: none;
+}
+
+
+/*Планшетная версия*/
+@media (min-width: $tablet-width) {
+  .addition__variants {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 533px;
+  }
+}
+
+/*Десктоп*/
+@media (min-width: $desktop-width) {
+  .addition__variants {
+    display: flex;
+  }
+}
