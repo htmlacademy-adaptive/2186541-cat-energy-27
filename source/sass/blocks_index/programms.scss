@@ -20,10 +20,15 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  margin-left: 91px;
+  margin-left: 23px;
   margin-top: 30px;
   text-transform: uppercase;
   text-align: start;
+}
+
+.programms__svg {
+  background-color: $basic-green;
+  border-radius: 50%;
 }
 
 .programms__description {

@@ -1,3 +1,5 @@
+
+
 .principles__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -9,6 +11,7 @@
 
 .principles__list {
   display: flex;
+  flex-direction: column;
   grid-row-gap: 20px;
   list-style-type: none;
 }
@@ -27,6 +30,7 @@
 @media (min-width: $tablet-width) {
   .principles__list {
     display: flex;
+    flex-direction: row;
     grid-row-gap: 37px;
     grid-column-gap: 137px;
     flex-wrap: wrap;
