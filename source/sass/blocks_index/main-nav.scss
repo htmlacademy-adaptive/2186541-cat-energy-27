@@ -51,11 +51,6 @@
   font-size: 20px;
   line-height: 20px;
   color: $black;
-
-
-  &--active {
-    border-bottom: 2px solid $basic-green;
-  }
 }
 
 .main-nav__item {
@@ -69,10 +64,31 @@
 @media (min-width: $tablet-width) {
   .main-nav__list {
     display: flex;
+    min-width: 440px;
+    justify-content: space-between;
   }
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: $black;
+  }
+
+  .main-nav__item {
+    border-top: none;
+
+    &--active {
+      border-bottom: 2px solid $basic-green;
+    }
   }
 }
 
