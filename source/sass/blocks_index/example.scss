@@ -29,3 +29,16 @@
   font-size: 14px;
   line-height: 20px;
 }
+
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .example__tablet-div {
+    display: flex;
+  }
+}
+
+
+/*Десктоп*/
+@media (min-width: $desktop-width) {
+  /*hhh*/
+}

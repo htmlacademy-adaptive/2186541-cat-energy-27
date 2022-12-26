@@ -1,3 +1,24 @@
 .main-header__wrapper {
   margin: 10px 20px;
 }
+
+.main-header__logo-image2 {
+  margin-left: 56px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__wrapper {
+    display: flex;
+  }
+
+  .main-header__logo-image2,
+  .main-header__logo-image {
+    display: none;
+  }
+}
+
+
+/*Десктоп*/
+@media (min-width: $desktop-width) {
+  /*hhh*/
+}

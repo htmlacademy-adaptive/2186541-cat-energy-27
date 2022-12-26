@@ -22,6 +22,7 @@
 .catalog__item {
   margin: 0;
   padding: 0;
+  background-color: $basic-grey;
 }
 
 .card__name {
@@ -35,4 +36,31 @@
 
 .card__button {
   width: 100%;
+}
+
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  .catalog__item {
+    width: 324px;
+  }
+}
+
+/*Десктоп*/
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    row-gap: 63px;
+  }
+
+  .catalog__item {
+    width: 245px;
+  }
 }

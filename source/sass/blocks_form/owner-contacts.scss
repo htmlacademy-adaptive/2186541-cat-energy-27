@@ -2,6 +2,10 @@
   border: none;
 }
 
+.owner-contacts__list {
+  list-style: none;
+}
+
 .owner-contacts__legend {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -26,4 +30,12 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+
+/*Десктоп*/
+@media (min-width: $desktop-width) {
+  .owner-contacts__list {
+    display: flex;
+  }
 }

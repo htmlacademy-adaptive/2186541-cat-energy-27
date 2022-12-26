@@ -20,9 +20,15 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  margin-left: 91px;
+  margin-left: 23px;
   margin-top: 30px;
   text-transform: uppercase;
+  text-align: start;
+}
+
+.programms__svg {
+  background-color: $basic-green;
+  border-radius: 50%;
 }
 
 .programms__description {
@@ -34,6 +40,7 @@
   padding: 22px;
   padding-left: 20px;
   padding-right: 33px;
+  text-align: start;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -45,4 +52,34 @@
   line-height: 16px;
   padding: 16px;
   text-transform: uppercase;
+  border: none;
+}
+
+
+/*Планшетная версия*/
+@media (min-width: $tablet-width) {
+  .programms__title {
+    color: $black;
+    margin-left: 53px;
+    padding: 0;
+  }
+
+  .programms__description {
+    width: 340px;
+    margin-left: 53px;
+    padding: 0;
+  }
+
+  .programms__button {
+    padding: 0;
+    margin-left: 53px;
+  }
+}
+
+
+/*Десктоп*/
+@media (min-width: $desktop-width) {
+  .programms__list {
+    display: flex;
+  }
 }

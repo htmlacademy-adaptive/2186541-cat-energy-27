@@ -21,6 +21,11 @@
   color: $special_dark-grey;
 }
 
+.main-footer__text-group {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-footer__logo {
   margin: 0;
   padding: 35px 96px;
@@ -36,4 +41,38 @@
   margin: 0;
   padding: 0;
   align-items: center;
+}
+
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper-block {
+    width: 708px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+/*Десктоп*/
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper-block {
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-footer__map {
+    position: relative;
+  }
+
+  .main-footer__text-group {
+    position: absolute;
+    top: auto;
+    background-color: $white;
+    z-index: 2;
+    width: 560px;
+    height: 198px;
+  }
 }

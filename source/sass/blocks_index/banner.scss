@@ -42,3 +42,31 @@
   line-height: 18px;
   border: none;
 }
+
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .banner {
+    background-image: none;
+    background-color: $white;
+  }
+
+  .banner__title {
+    color: $black;
+    text-align: start;
+  }
+
+  .banner__description {
+    color: $black;
+    text-align: start;
+  }
+}
+
+
+/*Десктоп*/
+@media (min-width: $desktop-width) {
+  .banner {
+    background-color: $basic-green;
+    background-image: url("../img/banner.jpg");
+    background-position: right;
+  }
+}
