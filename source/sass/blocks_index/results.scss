@@ -1,5 +1,11 @@
+.results {
+  padding: 0;
+}
+
 .results__item {
+  width: 124px;
   border: 1px solid #cdcdcd;
+  border-radius: 3px;
 }
 
 .results__title {
@@ -11,11 +17,17 @@
 }
 
 .results__description {
+  position: absolute;
+  left: 20px;
+  width: 77px;
+  margin: 0 auto;
   font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
+  color: $special_dark-grey;
+  background-color: $light-grey;
 }
 
 

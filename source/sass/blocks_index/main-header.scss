@@ -1,9 +1,16 @@
 .main-header__wrapper {
-  margin: 10px 20px;
+  margin: 0;
+}
+
+.main-header__logo-1 {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 17px;
+  align-items: center;
 }
 
 .main-header__logo-image2 {
-  margin-left: 56px;
+  margin-left: 76px;
 }
 
 @media (min-width: $tablet-width) {

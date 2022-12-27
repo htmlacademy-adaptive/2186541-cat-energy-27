@@ -1,10 +1,14 @@
+.example {
+  background-color: $light-grey;
+}
+
 .example__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  padding: 15px 21px;
+  padding: 0;
 }
 
 .example__description {
@@ -20,6 +24,7 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
+  margin: 0;
 }
 
 .example__final {
@@ -28,6 +33,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  margin-top: 20px;
 }
 
 /*Планшет*/
