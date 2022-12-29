@@ -6,11 +6,17 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .programms__item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
   background-color: $basic-grey;
-  padding: 20px;
+  min-width: 280px;
+  padding: 24px 33px 23px 20px;
   margin-bottom: 20px;
 }
 
@@ -26,10 +32,6 @@
   text-align: start;
 }
 
-.programms__svg {
-  background-color: $basic-green;
-  border-radius: 50%;
-}
 
 .programms__description {
   font-family: "Lato", "Arial", sans-serif;
@@ -58,6 +60,11 @@
 
 /*Планшетная версия*/
 @media (min-width: $tablet-width) {
+  .programms__item {
+    padding: 77px 62px 53px 52px;
+    margin-bottom: 30px;
+  }
+
   .programms__title {
     color: $black;
     margin-left: 53px;
@@ -81,5 +88,14 @@
 @media (min-width: $desktop-width) {
   .programms__list {
     display: flex;
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .programms__item {
+    flex-grow: 1;
+    min-width: 570px;
+    padding: 77px 67px 55px 52px;
+    margin-bottom: 71px;
   }
 }

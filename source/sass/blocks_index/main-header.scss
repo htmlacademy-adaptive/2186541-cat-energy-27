@@ -3,14 +3,94 @@
 }
 
 .main-header__logo-1 {
-  display: inline-block;
+  display: block;
   padding-top: 10px;
   padding-bottom: 17px;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .main-header__logo-image2 {
   margin-left: 76px;
+}
+
+.main-header__toggle {
+  position: relative;
+  padding: 0;
+  margin-left: auto;
+  z-index: 2;
+  display: block;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+
+  &--closed {
+    width: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: -25px;
+      left: 0;
+      right: 0;
+      width: 24px;
+      height: 2px;
+      background-color: $black;
+      box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      background-color: $basic-green;
+      box-shadow: 0 8px 0 0 $basic-green, 0 16px 0 0 $basic-green;
+    }
+
+    &:active::before {
+      opacity: 60%;
+    }
+  }
+
+  &--opened {
+    width: 24px;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -15px;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: $black;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:active::before,
+    &:active::after {
+      opacity: 60%;
+    }
+  }
+
+  &--nojs {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -20,6 +100,10 @@
 
   .main-header__logo-image2,
   .main-header__logo-image {
+    display: none;
+  }
+
+  .main-header__toggle {
     display: none;
   }
 }

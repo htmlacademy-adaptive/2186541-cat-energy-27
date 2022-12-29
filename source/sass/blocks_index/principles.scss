@@ -14,6 +14,7 @@
   flex-direction: column;
   grid-row-gap: 20px;
   list-style-type: none;
+  padding: 0;
 }
 
 .principles__description {
@@ -23,8 +24,48 @@
   font-size: 14px;
   line-height: 18px;
   grid-column: 3 / 4;
-}
+  display: flex;
 
+  &::before {
+    content: "";
+    display: block;
+    background-color: $basic-green;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    flex: none;
+  }
+
+  &--list {
+    &::before {
+      background-image: url("../img/icon-list.jpg");
+      background-size: 60px 60px;
+    }
+  }
+
+  &--water {
+    &::before {
+      background-image: url("../img/icon-water.jpg");
+      background-size: 60px 60px;
+    }
+  }
+
+  &--knife {
+    &::before {
+      background-image: url("../img/icon-knife.jpg");
+      background-size: 60px 60px;
+    }
+  }
+
+  &--time {
+    &::before {
+      background-image: url("../img/icon-time.jpg");
+      background-size: 60px 60px;
+    }
+  }
+}
 
 /*Планшет*/
 @media (min-width: $tablet-width) {
@@ -38,6 +79,49 @@
 
   .principles__item {
     width: 245px;
+    margin: 0;
+    max-width: 250px;
+    min-height: 280px;
+    padding-top: 34px;
+    background-repeat: no-repeat;
+    background-position: right 34px;
+
+    &--one {
+      background-image: url("../img/1.svg");
+      background-position: 118px 34px;
+    }
+
+    &--two {
+      background-image: url("../img/2.svg");
+      background-position: 111px 34px;
+    }
+
+    &--three {
+      background-image: url("../img/3.svg");
+    }
+
+    &--four {
+      background-image: url("../img/4.svg");
+    }
+  }
+
+  .principles__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 0;
+  }
+
+  .principles__description {
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin-right: 0;
+      margin-bottom: 31px;
+    }
   }
 }
 
@@ -49,3 +133,4 @@
     grid-column-gap: 37px;
   }
 }
+
