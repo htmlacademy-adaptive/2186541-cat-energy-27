@@ -9,6 +9,9 @@
   font-size: 36px;
   line-height: 40px;
   padding: 0;
+  margin: 0;
+  padding-top: 25px;
+  margin-bottom: 40px;
 }
 
 .example__description {
@@ -17,6 +20,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  margin-bottom: 20px;
 }
 
 .example__results {
@@ -25,6 +29,7 @@
   justify-content: space-between;
   text-align: center;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .example__final {
@@ -37,17 +42,54 @@
   margin: 0;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.example__before-after {
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 /*Планшет*/
 @media (min-width: $tablet-width) {
   .example__tablet-div {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .example__results {
+    gap: 42px;
   }
 }
 
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
-  /*hhh*/
+  .example__description {
+    max-width: 436px;
+  }
+
+  .example__tablet-div {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .example__results {
+    justify-content: flex-start;
+  }
+
+  .example__final {
+    text-align: left;
+  }
+
+  .example__before-after {
+    position: relative;
+  }
+
+  .example__before-after-image {
+    position: absolute;
+    top: -300px;
+    width: 560px;
+    height: 512px;
+  }
 }

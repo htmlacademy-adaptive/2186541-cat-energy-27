@@ -2,6 +2,10 @@
   &--nojs {
     display: block;
   }
+
+  &--closed {
+    display: none;
+  }
 }
 
 .main-nav__list {

@@ -6,7 +6,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin-bottom: 40px;
+  margin: 0;
 }
 
 .principles__list {
@@ -25,6 +25,7 @@
   line-height: 18px;
   grid-column: 3 / 4;
   display: flex;
+  margin: 0;
 
   &::before {
     content: "";
@@ -108,7 +109,7 @@
   .principles__title {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .principles__description {

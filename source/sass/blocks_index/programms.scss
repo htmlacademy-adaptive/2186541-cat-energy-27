@@ -8,6 +8,8 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .programms__item {
@@ -39,9 +41,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  padding: 22px;
-  padding-left: 20px;
-  padding-right: 33px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 23px;
   text-align: start;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -55,6 +57,7 @@
   padding: 16px;
   text-transform: uppercase;
   border: none;
+  text-align: left;
 }
 
 
@@ -97,5 +100,6 @@
     min-width: 570px;
     padding: 77px 67px 55px 52px;
     margin-bottom: 71px;
+    max-width: 570px;
   }
 }

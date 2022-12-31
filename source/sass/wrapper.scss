@@ -1,0 +1,20 @@
+.wrapper {
+  width: 320px;
+  margin: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    width: $tablet-width;
+    margin: auto;
+  }
+}
+
+
+/*Десктоп*/
+@media (min-width: $desktop-width) {
+  .wrapper {
+    width: $desktop-width;
+    margin: auto;
+  }
+}
