@@ -1,3 +1,9 @@
+.main-footer__wrapper {
+  &--form {
+    background-color: $basic-grey;
+  }
+}
+
 .main-footer__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -22,7 +28,7 @@
 }
 
 .main-footer__logo {
-  margin: 0;
+  margin: auto;
   padding: 35px 96px;
 }
 
@@ -45,6 +51,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 58px;
+    padding-bottom: 59px;
+  }
+
+  .main-footer__wrapper {
+    background-color: $basic-grey;
+  }
+
+  .main-footer__text-group {
+    width: 628px;
+    padding: 55px 70px;
+    margin: auto;
+  }
+
+  .main-footer__title {
+    width: 172px;
+  }
+
+  .main-footer__address {
+    width: 160px;
+  }
+
+  .main-footer__logo {
+    padding: 0;
   }
 }
 

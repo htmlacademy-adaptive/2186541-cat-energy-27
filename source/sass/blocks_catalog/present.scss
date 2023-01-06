@@ -3,7 +3,7 @@
   background-image: url("../img/present.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   color: $white;
 }
 
@@ -27,7 +27,37 @@
 }
 
 
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .present__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 506px;
+    margin: auto;
+    min-height: 200px;
+    margin-bottom: 76px;
+    margin-top: 69px;
+  }
+
+  .present__description {
+    margin-left: auto;
+    text-align: left;
+    width: 161px;
+  }
+}
+
 /*Десктоп*/
 @media (min-width: $desktop-width) {
-  /*hhh*/
+  .present {
+    max-width: 245px;
+  }
+
+  .present__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .present__description {
+    text-align: center;
+  }
 }

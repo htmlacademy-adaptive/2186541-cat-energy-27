@@ -24,8 +24,8 @@
 
 .catalog__item {
   margin: 0;
-  padding: 0;
-  background-color: $basic-grey;
+  padding: 20px;
+  border-top: 1px solid $special_grey-2;
 }
 
 .card__name {
@@ -50,7 +50,12 @@
   }
 
   .catalog__item {
-    width: 324px;
+    width: 304px;
+    background-color: $basic-grey;
+  }
+
+  .catalog__title {
+    border: none;
   }
 }
 

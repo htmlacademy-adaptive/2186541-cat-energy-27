@@ -19,5 +19,7 @@
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
-  /*ppp*/
+  .addition {
+    display: flex;
+  }
 }

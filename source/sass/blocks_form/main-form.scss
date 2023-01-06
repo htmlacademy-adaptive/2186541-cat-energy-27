@@ -4,6 +4,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin: 0 auto 38px;
 }
 
 .main-form__description {
@@ -13,6 +14,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-bottom: 38px;
 }
 
 .main-form__button {
@@ -28,8 +30,83 @@
   text-align: center;
 }
 
+.main-form__info {
+  border-bottom: 1px solid $grey;
+  padding-bottom: 18px;
+}
+
+.main-form__goal {
+  margin-top: 22px;
+  border: none;
+  border-bottom: 1px solid $grey;
+  padding: 0;
+  padding-bottom: 6px;
+}
+
+.main-form__comment {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-form__addition {
+  margin-top: 23px;
+  padding: 0;
+}
+
+
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .main-form__info {
+    border: none;
+  }
+
+  .main-form__goal {
+    border-bottom: none;
+    border: 1px solid $light-grey;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 27px;
+  }
+
+  .main-form__title {
+    margin-bottom: 54px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .main-form__description {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .main-form__tablet-wrapper {
+    max-width: 533px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 123px;
+    margin-bottom: 72px;
+  }
+}
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
-  /*hhh*/
+  .main-form__tablet-wrapper {
+    max-width: 900px;
+  }
+
+  .main-form__important {
+    text-align: left;
+  }
+
+  .main-form__info-and-goal-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 80px;
+  }
+
+  .main-form__goal {
+    margin: 0;
+  }
 }
