@@ -41,29 +41,29 @@
 
   &--list {
     &::before {
-      background-image: url("../img/icon-list.jpg");
-      background-size: 60px 60px;
+      background-image: url("../img/icon-list.svg");
+      background-size: 30px 32px;
     }
   }
 
   &--water {
     &::before {
-      background-image: url("../img/icon-water.jpg");
-      background-size: 60px 60px;
+      background-image: url("../img/icon-water.svg");
+      background-size: 26px 29px;
     }
   }
 
   &--knife {
     &::before {
-      background-image: url("../img/icon-knife.jpg");
-      background-size: 60px 60px;
+      background-image: url("../img/icon-knife.svg");
+      background-size: 25px 30px;
     }
   }
 
   &--time {
     &::before {
-      background-image: url("../img/icon-time.jpg");
-      background-size: 60px 60px;
+      background-image: url("../img/icon-time.svg");
+      background-size: 26px 31px;
     }
   }
 }
@@ -132,5 +132,9 @@
   .principles__item {
     width: 245px;
     grid-column-gap: 37px;
+  }
+
+  .principles__list {
+    grid-column-gap: 79px;
   }
 }

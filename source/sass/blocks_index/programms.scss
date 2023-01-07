@@ -17,19 +17,51 @@
   position: relative;
   flex-direction: column;
   background-color: $basic-grey;
-  min-width: 280px;
-  padding: 24px 33px 23px 20px;
+  width: 280px;
+  padding: 0;
   margin-bottom: 20px;
+
+  &--slim {
+    ::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/catalog-slim.svg");
+      width: 50px;
+      height: 53px;
+      background-size: auto  53px;
+      background-position: center;
+      background-repeat: no-repeat;
+      top: 22px;
+      left: 13px;
+    }
+  }
+
+  &--pro {
+    ::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/catalog-pro.svg");
+      width: 67px;
+      height: 50px;
+      background-size: auto  50px;
+      background-position: center;
+      background-repeat: no-repeat;
+      top: 22px;
+      left: 13px;
+    }
+  }
 }
 
 .programms__title {
+  margin: 0;
+  margin-bottom: 29px;
+  padding-top: 30px;
+  padding-left: 91px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  margin-left: 23px;
-  margin-top: 30px;
   text-transform: uppercase;
   text-align: start;
 }
@@ -40,9 +72,11 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
+  width: 240px;
   line-height: 18px;
   margin: 0;
   padding: 0;
+  margin-left: 20px;
   padding-bottom: 23px;
   text-align: start;
   border-bottom: 1px solid #d9d9d9;
@@ -60,12 +94,29 @@
   text-align: left;
 }
 
+.programms__button-svg {
+  &:hover {
+    width: 34px;
+  }
+}
 
 /*Планшетная версия*/
 @media (min-width: $tablet-width) {
   .programms__item {
     padding: 77px 62px 53px 52px;
     margin-bottom: 30px;
+    width: 708px;
+    box-sizing: border-box;
+
+    ::before {
+      background-size: auto  200px;
+      width: 268px;
+      height: 200px;
+      top: auto;
+      left: auto;
+      right: 28px;
+      bottom: 80px;
+    }
   }
 
   .programms__title {
@@ -97,9 +148,18 @@
 
   .programms__item {
     flex-grow: 1;
-    min-width: 570px;
     padding: 77px 67px 55px 52px;
     margin-bottom: 71px;
     max-width: 570px;
+
+    ::before {
+      background-size: auto  100px;
+      width: 134px;
+      height: 100px;
+      top: 47px;
+      left: 33px;
+      right: auto;
+      bottom: auto;
+    }
   }
 }

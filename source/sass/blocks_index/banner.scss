@@ -1,7 +1,6 @@
 
-.banner__wrapper {
+.banner {
   font-family: "Oswald", "Arial", sans-serif;
-  padding: 27px 35px;
   position: relative;
 
   ::before {
@@ -16,7 +15,6 @@
     z-index: -1;
     background-color: $basic-green;
     background-image: url("../img/banner.jpg");
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: $white;
@@ -30,17 +28,28 @@
   line-height: 36px;
   text-align: center;
   color: $white;
+  margin: 0;
+  padding: 0;
+  padding-top: 27px;
 }
 
 .banner__description {
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 29px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 36px;
-  margin: 0;
   text-transform: uppercase;
   text-align: center;
   color: $white;
+}
+
+.banner__image {
+  display: block;
+  margin: 0 auto;
 }
 
 .banner__button {
@@ -54,6 +63,7 @@
   font-size: 14px;
   line-height: 18px;
   border: none;
+  width: 100%;
 }
 
 /*Планшет*/
@@ -81,8 +91,8 @@
 
   .banner__image {
     position: absolute;
-    top: 270px;
-    right: 150px;
+    top: 260px;
+    left: 90px;
     order: 1;
     z-index: -1;
     width: 709px;
@@ -92,6 +102,7 @@
   .banner__wrapper {
     padding: 27px 117px 526px;
     position: relative;
+    margin-bottom: 100px;
   }
 
   .banner__button {
@@ -110,21 +121,35 @@
 
     ::before {
       display: block;
-      z-index: 1;
-      height: 694px;
+      z-index: -2;
+      height: 100%;
       width: 50%;
       margin-left: 50%;
       background-position: left;
       background-size: cover;
+      top: -100px;
     }
   }
 
   .banner__image {
     width: 552px;
-    left: 695px;
+    height: auto;
+    left: 609px;
+    top: 100px;
+  }
+
+  .banner__title {
+    padding-left: 80px;
   }
 
   .banner__description {
     margin-bottom: 52px;
+    padding-bottom: 0;
+    padding-top: 40px;
+    padding-left: 80px;
+  }
+
+  .banner__button {
+    margin-left: 80px;
   }
 }

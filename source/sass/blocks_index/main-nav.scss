@@ -25,6 +25,14 @@
   font-size: 20px;
   line-height: 20px;
   color: $black;
+
+  &:hover {
+    color: rgba($black, 60%);
+  }
+
+  &:active {
+    color: rgba($black, 60%);
+  }
 }
 
 .main-nav__item {
@@ -64,5 +72,21 @@
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
-  /*ppp*/
+  .main-nav__link {
+    color: $white;
+
+    &:hover {
+      color: rgba($white, 60%);
+    }
+
+    &:active {
+      color: rgba($white, 60%);
+    }
+  }
+
+  .main-nav__item {
+    &--active {
+      border-bottom: 2px solid $white;
+    }
+  }
 }

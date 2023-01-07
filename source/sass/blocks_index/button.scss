@@ -9,4 +9,17 @@
   font-size: 14px;
   line-height: 18px;
   border: none;
+
+  &:hover {
+    background-color: $basic_green-2;
+  }
+
+  &:active {
+    background-color: $basic_green-2;
+    color: rgba($white, 30%);
+  }
+
+  &:focus {
+    background-color: $basic_green-2;
+  }
 }
