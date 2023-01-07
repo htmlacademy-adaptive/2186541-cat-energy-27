@@ -5,6 +5,26 @@
   font-size: 16px;
   line-height: 19px;
   color: $special_dark-grey;
+  text-decoration: none;
+
+  &:hover + .copyright__svg,
+  &:focus + .copyright__svg {
+    color: $basic-green;
+  }
+}
+
+.copyright__svg {
+  color: $special_dark-grey;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $basic-green;
+  }
+
+  &:active {
+    color: rgba($basic-green, 30%);
+  }
 }
 
 

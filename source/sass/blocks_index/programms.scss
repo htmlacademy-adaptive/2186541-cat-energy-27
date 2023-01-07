@@ -121,19 +121,32 @@
 
   .programms__title {
     color: $black;
-    margin-left: 53px;
+    margin: 0;
     padding: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .programms__description {
     width: 340px;
-    margin-left: 53px;
+    margin: 0;
     padding: 0;
+    margin-bottom: 48px;
+    border-bottom: none;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .programms__button {
     padding: 0;
-    margin-left: 53px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .programms__button-svg {
+    margin-left: 25px;
   }
 }
 
@@ -161,5 +174,17 @@
       right: auto;
       bottom: auto;
     }
+  }
+
+  .programms__title {
+    margin-left: 162px;
+    margin-bottom: 73px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .programms__description {
+    width: 457px;
+    margin-bottom: 23px;
   }
 }
