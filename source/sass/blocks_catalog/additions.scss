@@ -1,0 +1,55 @@
+.additions {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.additions__wrapper {
+  margin-bottom: 35px;
+}
+
+.additions__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additions__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.additions-card__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.additions-card__description {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.additions-card__button {
+  width: 100%;
+}
+
+
+/*Десктоп*/
+@media (min-width: $desktop-width) {
+  .additions {
+    display: flex;
+  }
+}

@@ -1,4 +1,5 @@
 @import "colors.scss";
+@import "mixins.scss";
 @import "fonts.scss";
 @import "viewports.scss";
 @import "wrapper.scss";
@@ -6,8 +7,8 @@
 @import "./blocks_index/banner.scss";
 @import "./blocks_index/main-header.scss";
 @import "./blocks_index/main-nav.scss";
-@import "./blocks_catalog/addition-card.scss";
-@import "./blocks_catalog/addition.scss";
+@import "./blocks_catalog/additions-card.scss";
+@import "./blocks_catalog/additions.scss";
 @import "./blocks_catalog/card.scss";
 @import "./blocks_catalog/catalog.scss";
 @import "./blocks_catalog/present.scss";

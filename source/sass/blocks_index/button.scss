@@ -23,3 +23,29 @@
     background-color: $basic_green-2;
   }
 }
+
+.button-grey {
+  padding: 7px 44px;
+  color: $special_dark-grey;
+  background-color: $basic-grey;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+
+  &:hover {
+    background-color: $special_grey-2;
+  }
+
+  &:active {
+    background-color: $special_dark-grey;
+    color: rgba($special_grey, 30%);
+  }
+
+  &:focus {
+    background-color: $special_grey-2;
+  }
+}

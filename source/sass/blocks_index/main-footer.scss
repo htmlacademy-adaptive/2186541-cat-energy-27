@@ -1,4 +1,7 @@
 .main-footer__wrapper {
+  margin-top: 35px;
+  background-color: $basic-grey;
+
   &--form {
     background-color: $basic-grey;
   }
@@ -25,6 +28,10 @@
 .main-footer__text-group {
   display: flex;
   justify-content: space-between;
+}
+
+.main-footer__text-group-index {
+  background-color: $white;
 }
 
 .main-footer__wrapper-block {

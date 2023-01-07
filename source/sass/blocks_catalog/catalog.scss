@@ -1,10 +1,7 @@
-.catalog__wrapper {
-  padding: 10px 20px;
-}
-
 .catalog__title {
   margin: 0;
   padding: 0;
+  padding-left: 20px;
   padding-top: 27px;
   padding-bottom: 41px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -22,10 +19,25 @@
   padding: 0;
 }
 
+.catalog__item-wrapper {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: auto;
+
+  @media (max-width: $tablet-width) {
+    @include wrapper();
+  }
+}
+
 .catalog__item {
   margin: 0;
-  padding: 20px;
+  margin-bottom: 25px;
   border-top: 1px solid $special_grey-2;
+
+  &--last {
+    border-bottom: 1px solid $special_grey-2;
+    padding-bottom: 25px;
+  }
 }
 
 .card__name {
@@ -43,15 +55,33 @@
 
 /*Планшет*/
 @media (min-width: $tablet-width) {
+  .catalog__wrapper {
+    @include wrapper-tablet();
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
   }
 
+  .catalog__item-wrapper {
+    padding: 161px 36px 39px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    position: relative;
+  }
+
   .catalog__item {
-    width: 304px;
+    width: 324px;
     background-color: $basic-grey;
+
+    &--last {
+      background-color: $white;
+      border: 2px solid $basic-grey;
+    }
   }
 
   .catalog__title {
@@ -61,6 +91,10 @@
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    @include wrapper-desk();
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
