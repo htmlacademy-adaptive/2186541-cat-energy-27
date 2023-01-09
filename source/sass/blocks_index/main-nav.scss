@@ -67,6 +67,10 @@
     &--active {
       border-bottom: 2px solid $basic-green;
     }
+
+    &--catalog-active {
+      border-bottom: 2px solid $basic-green;
+    }
   }
 }
 
@@ -82,11 +86,27 @@
     &:active {
       color: rgba($white, 60%);
     }
+
+    &--catalog {
+      color: $black;
+
+      &:hover {
+        color: rgba($black, 60%);
+      }
+
+      &:active {
+        color: rgba($black, 60%);
+      }
+    }
   }
 
   .main-nav__item {
     &--active {
       border-bottom: 2px solid $white;
+    }
+
+    &--catalog-active {
+      border-bottom: 2px solid $basic-green;
     }
   }
 }

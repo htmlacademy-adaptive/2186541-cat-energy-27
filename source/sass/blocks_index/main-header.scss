@@ -95,9 +95,14 @@
     justify-content: flex-end;
   }
 
-  .main-header__logo-image2,
-  .main-header__logo-image {
+  .main-header__logo-image2, {
     display: none;
+  }
+
+  .main-header__logo-image {
+    width: 174px;
+    height: auto;
+    margin-right: 94px;
   }
 
   .main-header__toggle {
@@ -108,5 +113,9 @@
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
-  /*hhh*/
+  .main-header__logo-image {
+    width: 202px;
+    height: auto;
+    margin-right: 540px;
+  }
 }

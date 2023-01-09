@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>Cat energy</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/fav_svg.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/fav_180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -12,8 +16,11 @@
   <header class="main-header">
     <div class="main-header__wrapper wrapper">
       <a class="main-header__logo-1">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-main-tablet.svg">
         <img class="main-header__logo-image" src="img/logo-main.png" width="33" height="37"
           alt="Лого магазина Cat energy">
+        </picture>
         <img class="main-header__logo-image2" src="img/logo-main-2.png" width="101" height="18"
           alt="Магазин Cat energy">
         <button class="main-header__toggle main-header__toggle--closed " type="button"><span

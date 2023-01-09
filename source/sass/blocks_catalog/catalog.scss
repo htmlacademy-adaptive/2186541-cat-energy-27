@@ -63,6 +63,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
+    justify-content: center;
   }
 
   .catalog__item-wrapper {
@@ -86,12 +87,18 @@
 
   .catalog__title {
     border: none;
+
+    @include wrapper-tablet();
   }
 }
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
   .catalog__wrapper {
+    @include wrapper-desk();
+  }
+
+  .catalog__title {
     @include wrapper-desk();
   }
 
@@ -104,5 +111,6 @@
 
   .catalog__item {
     width: 245px;
+    box-sizing: border-box;
   }
 }
