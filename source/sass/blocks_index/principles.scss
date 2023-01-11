@@ -13,6 +13,8 @@
   display: flex;
   flex-direction: column;
   grid-row-gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 48px;
   list-style-type: none;
   padding: 0;
 }
@@ -70,12 +72,17 @@
 
 /*Планшет*/
 @media (min-width: $tablet-width) {
+  .principles__wrapper {
+    margin-top: 20px;
+  }
+
   .principles__list {
     display: flex;
     flex-direction: row;
-    grid-row-gap: 37px;
-    grid-column-gap: 137px;
     flex-wrap: wrap;
+    margin-top: 37px;
+    grid-row-gap: 3px;
+    grid-column-gap: 140px;
   }
 
   .principles__item {
@@ -89,12 +96,12 @@
 
     &--one {
       background-image: url("../img/1.svg");
-      background-position: 118px 34px;
+      background-position: 125px 34px;
     }
 
     &--two {
       background-image: url("../img/2.svg");
-      background-position: 111px 34px;
+      background-position: 119px 34px;
     }
 
     &--three {
@@ -136,5 +143,6 @@
 
   .principles__list {
     grid-column-gap: 79px;
+    grid-row-gap: 37px;
   }
 }

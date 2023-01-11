@@ -9,7 +9,6 @@
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .programms__item {
@@ -32,7 +31,7 @@
       background-position: center;
       background-repeat: no-repeat;
       top: 22px;
-      left: 13px;
+      left: 20px;
     }
   }
 
@@ -42,11 +41,11 @@
       position: absolute;
       background-image: url("../img/catalog-pro.svg");
       width: 67px;
-      height: 50px;
+      height: 53px;
       background-size: auto  50px;
       background-position: center;
       background-repeat: no-repeat;
-      top: 22px;
+      top: 21px;
       left: 13px;
     }
   }
@@ -88,13 +87,17 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  padding: 16px;
+  padding-top: 17px;
+  padding-bottom: 24px;
+  padding-left: 21px;
   text-transform: uppercase;
   border: none;
   text-align: left;
 }
 
 .programms__button-svg {
+  padding-left: 12px;
+
   &:hover {
     width: 34px;
   }
@@ -114,8 +117,8 @@
       height: 200px;
       top: auto;
       left: auto;
-      right: 28px;
-      bottom: 80px;
+      right: 27px;
+      bottom: 82px;
     }
   }
 
@@ -138,15 +141,20 @@
     line-height: 24px;
   }
 
+  br {
+    display: none;
+  }
+
   .programms__button {
     padding: 0;
     margin: 0;
     font-size: 20px;
     line-height: 30px;
+    padding-bottom: 5px;
   }
 
   .programms__button-svg {
-    margin-left: 25px;
+    margin-left: 11px;
   }
 }
 

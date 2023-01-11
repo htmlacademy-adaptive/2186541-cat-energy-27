@@ -49,3 +49,13 @@
     background-color: $special_grey-2;
   }
 }
+
+
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .button {
+    padding: 16px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

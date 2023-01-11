@@ -1,3 +1,13 @@
+@media (max-width: $mobile-width-only) {
+  .main-header {
+    position: relative;
+
+    &--nojs {
+      position: static;
+    }
+  }
+}
+
 .main-header__logo-1 {
   display: block;
   padding-top: 10px;
@@ -61,12 +71,12 @@
     &::before,
     &::after {
       content: "";
+      width: 24px;
+      height: 2px;
       display: block;
       position: absolute;
       top: -15px;
       left: 0;
-      width: 24px;
-      height: 2px;
       background-color: $black;
     }
 
@@ -85,7 +95,7 @@
   }
 
   &--nojs {
-    display: none;
+    /*ff*/
   }
 }
 
@@ -113,6 +123,10 @@
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
+  .main-header__wrapper {
+    padding-top: 53px;
+  }
+
   .main-header__logo-image {
     width: 202px;
     height: auto;

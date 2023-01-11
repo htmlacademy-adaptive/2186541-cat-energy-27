@@ -16,8 +16,13 @@
     background-color: $basic-green;
     background-image: url("../img/banner.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
     color: $white;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/banner_2x.jpg");
+    }
   }
 }
 
@@ -36,8 +41,8 @@
 .banner__description {
   margin: 0;
   padding: 0;
-  padding-top: 25px;
-  padding-bottom: 29px;
+  padding-top: 15px;
+  padding-bottom: 28px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -50,20 +55,12 @@
 .banner__image {
   display: block;
   margin: 0 auto;
+  margin-top: -10px;
 }
 
 .banner__button {
-  padding: 7px 44px;
-  color: $white;
-  background-color: $basic-green;
-  text-transform: uppercase;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  border: none;
   width: 100%;
+  min-height: 42px;
 }
 
 /*Планшет*/
@@ -79,6 +76,8 @@
     text-align: start;
     font-size: 60px;
     line-height: 60px;
+    padding: 0;
+    padding-top: 5px;
   }
 
   .banner__description {
@@ -86,13 +85,16 @@
     text-align: start;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 49px;
+    margin-bottom: 25px;
+    margin-top: 27px;
   }
 
   .banner__image {
     position: absolute;
-    top: 260px;
-    left: 90px;
+    width: 709px;
+    height: auto;
+    top: 244px;
+    left: 30px;
     order: 1;
     z-index: -1;
     width: 709px;
@@ -102,7 +104,7 @@
   .banner__wrapper {
     padding: 27px 117px 526px;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: -19px;
   }
 
   .banner__button {
@@ -123,23 +125,28 @@
       display: block;
       z-index: -2;
       height: 100%;
-      width: 50%;
       margin-left: 50%;
+      background-image: url("../img/banner_desktop_1x.jpg");
       background-position: left;
       background-size: cover;
-      top: -100px;
+      top: -150px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/banner_desktop_2x.jpg");
+      }
     }
   }
 
   .banner__image {
     width: 552px;
     height: auto;
-    left: 609px;
+    left: 554px;
     top: 100px;
   }
 
   .banner__title {
     padding-left: 80px;
+    max-width: 430px;
   }
 
   .banner__description {
