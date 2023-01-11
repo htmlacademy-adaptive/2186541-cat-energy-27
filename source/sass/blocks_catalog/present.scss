@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: $white;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/present_2x.jpg");
+  }
 }
 
 .present__wrapper {
@@ -29,6 +33,14 @@
 
 /*Планшет*/
 @media (min-width: $tablet-width) {
+  .present {
+    background-image: url("../img/present_tablet_1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/present_tablet_2x.jpg");
+    }
+  }
+
   .present__wrapper {
     flex-direction: row;
     justify-content: space-between;
@@ -49,7 +61,13 @@
 /*Десктоп*/
 @media (min-width: $desktop-width) {
   .present {
-    max-width: 245px;
+    width: 245px;
+    height: 100%;
+    background-image: url("../img/present_desktop_1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/present_desktop_2x.jpg");
+    }
   }
 
   .present__wrapper {
