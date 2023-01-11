@@ -1,5 +1,20 @@
 .goal__variants {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.goal__item {
+  margin-bottom: 13px;
+
+  &--last {
+    margin-bottom: 0;
+  }
+}
+
+.goal__control {
+  display: flex;
+  align-items: center;
 }
 
 .goal__control-label {
@@ -12,6 +27,40 @@
   color: $special_dark-grey;
 }
 
+.goal__control-mark {
+  display: block;
+  position: relative;
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid $special_grey;
+}
+
+.goal__control-input[type="radio"]:checked + .goal__control-mark {
+  &::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    background-color: $basic-green;
+    border-radius: 50%;
+  }
+}
+
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .goal__control-mark {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+}
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {

@@ -9,6 +9,9 @@
   font-size: 36px;
   line-height: 40px;
   padding: 0;
+  margin: 0;
+  padding-top: 25px;
+  margin-bottom: 40px;
 }
 
 .example__description {
@@ -17,6 +20,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  margin-bottom: 20px;
 }
 
 .example__results {
@@ -25,6 +29,7 @@
   justify-content: space-between;
   text-align: center;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .example__final {
@@ -36,18 +41,110 @@
   text-transform: uppercase;
   margin: 0;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 33px;
+  margin-bottom: 17px;
+}
+
+.example__before-after {
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 /*Планшет*/
 @media (min-width: $tablet-width) {
+  .example {
+    position: relative;
+    border: 1px solid #e6e6e6;
+    background-color: $white;
+    padding-bottom: 700px;
+
+    &::after {
+      content: "";
+      background-color: $light-grey;
+      height: 462px;
+      width: 100%;
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 0;
+    }
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 63px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+
   .example__tablet-div {
     display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .example__results {
+    gap: 42px;
+  }
+
+  .example__final {
+    width: 174px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+    margin: 0;
+    margin-top: 8px;
+  }
+
+  .example__before-after {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    bottom: 70px;
   }
 }
 
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
-  /*hhh*/
+  .example {
+    padding-bottom: 120px;
+  }
+
+  .example__description {
+    max-width: 436px;
+  }
+
+  .example__tablet-div {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .example__results {
+    justify-content: flex-start;
+  }
+
+  .example__final {
+    text-align: left;
+  }
+
+  .example__before-after {
+    position: relative;
+  }
+
+  .example__before-after-image {
+    position: absolute;
+    top: -300px;
+    width: 560px;
+    height: 512px;
+  }
 }

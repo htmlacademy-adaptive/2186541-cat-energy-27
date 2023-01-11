@@ -4,11 +4,17 @@
 
 .results__item {
   width: 124px;
+  padding-top: 15px;
+  padding-bottom: 8px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  position: relative;
 }
 
 .results__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 7px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -18,18 +24,43 @@
 
 .results__description {
   position: absolute;
-  left: 20px;
+  left: 23px;
+  bottom: -15px;
   width: 77px;
   margin: 0 auto;
   font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: inherit;
   font-size: 12px;
   line-height: 12px;
   color: $special_dark-grey;
   background-color: $light-grey;
 }
 
+
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .results__item {
+    width: 162px;
+  }
+
+  .results__title {
+    margin-bottom: 11px;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .results__description {
+    font-size: 14px;
+    line-height: 14px;
+    width: 125px;
+    bottom: -7px;
+    left: 18px;
+    background-color: $white;
+  }
+}
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {

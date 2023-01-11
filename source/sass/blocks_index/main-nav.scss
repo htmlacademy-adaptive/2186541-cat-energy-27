@@ -1,40 +1,21 @@
-
-
-.main-nav__toggle {
-  position: absolute;
-  padding: 0;
-  top: 10px;
-  right: 0;
-  z-index: 2;
-  display: block;
-  width: 24px;
-  height: 48px;
-  background-color: inherit;
-  cursor: pointer;
-  border: none;
-
-  &:hover,
-  &:active {
-    background-color: #624530;
+.main-nav {
+  &--nojs {
+    display: block;
   }
-}
 
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 17px;
-  width: 36px;
-  height: 2px;
-  background-color: $black;
-  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
-}
+  @media (max-width: $mobile-width-only) {
+    background-color: $white;
 
-.main-nav--closed .main-nav__toggle:active::before {
-  background-color: fade(#ffffff, 30%);
-  box-shadow:
-    0 8px 0 0 fade(#ffffff, 30%),
-    0 16px 0 0 fade(#ffffff, 30%);
+    &--closed {
+      display: none;
+    }
+
+    &--opened {
+      position: absolute;
+      z-index: 5;
+      width: 100%;
+    }
+  }
 }
 
 .main-nav__list {
@@ -54,6 +35,14 @@
   font-size: 20px;
   line-height: 20px;
   color: $black;
+
+  &:hover {
+    color: rgba($black, 60%);
+  }
+
+  &:active {
+    color: rgba($black, 60%);
+  }
 }
 
 .main-nav__item {
@@ -69,10 +58,7 @@
     display: flex;
     min-width: 440px;
     justify-content: space-between;
-  }
-
-  .main-nav__toggle {
-    display: none;
+    padding-top: 5px;
   }
 
   .main-nav__link {
@@ -92,10 +78,46 @@
     &--active {
       border-bottom: 2px solid $basic-green;
     }
+
+    &--catalog-active {
+      border-bottom: 2px solid $basic-green;
+    }
   }
 }
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
-  /*ppp*/
+  .main-nav__link {
+    color: $white;
+
+    &:hover {
+      color: rgba($white, 60%);
+    }
+
+    &:active {
+      color: rgba($white, 60%);
+    }
+
+    &--catalog {
+      color: $black;
+
+      &:hover {
+        color: rgba($black, 60%);
+      }
+
+      &:active {
+        color: rgba($black, 60%);
+      }
+    }
+  }
+
+  .main-nav__item {
+    &--active {
+      border-bottom: 2px solid $white;
+    }
+
+    &--catalog-active {
+      border-bottom: 2px solid $basic-green;
+    }
+  }
 }

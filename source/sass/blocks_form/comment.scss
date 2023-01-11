@@ -4,6 +4,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  margin-bottom: 38px;
 }
 
 .comment__textarea {
@@ -12,8 +13,22 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  min-height: 151px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  padding: 10px 12px 10px 15px;
 }
 
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .comment__textarea {
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 174px;
+    margin-bottom: 65px;
+    padding: 10px 19px;
+  }
+}
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {

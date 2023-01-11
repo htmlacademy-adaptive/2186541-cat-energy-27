@@ -1,9 +1,15 @@
 .main-footer__wrapper {
-  margin: 0;
-  padding: 0;
+  background-color: $basic-grey;
+
+  &--form {
+    background-color: $basic-grey;
+  }
 }
 
 .main-footer__title {
+  margin: 0;
+  padding: 0;
+  width: 139px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -13,6 +19,9 @@
 }
 
 .main-footer__address {
+  width: 139px;
+  margin: 0;
+  padding: 0;
   font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -24,32 +33,98 @@
 .main-footer__text-group {
   display: flex;
   justify-content: space-between;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
-.main-footer__logo {
-  margin: 0;
-  padding: 35px 96px;
+.main-footer__text-group-index {
+  background-color: $white;
+}
+
+.main-footer__wrapper-block {
+  margin-top: 39px;
+  padding-bottom: 22px;
+}
+
+.main-footer__logo-link {
+  margin: auto;
+}
+
+.main-footer__logo-img {
+  padding-bottom: 20px;
+  display: block;
+  margin: 0 auto;
 }
 
 .main-footer__copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 20px;
 }
 
 .main-footer__social {
   margin: 0;
   padding: 0;
   align-items: center;
+  padding-bottom: 18px;
+  padding-top: 20px;
+  border-bottom: 1px solid $grey;
+  border-top: 1px solid $grey;
 }
 
 /*Планшет*/
 @media (min-width: $tablet-width) {
   .main-footer__wrapper-block {
-    width: 708px;
+    width: 767px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 45px;
+    padding-bottom: 59px;
+  }
+
+  .main-footer__wrapper {
+    background-color: $basic-grey;
+  }
+
+  .main-footer__text-group {
+    width: 628px;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 56px;
+  }
+
+  .main-footer__title {
+    width: 172px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .main-footer__address {
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .main-footer__logo-link {
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-footer__copyright {
+    width: 163px;
+    padding: 0;
+  }
+
+  .main-footer__social {
+    border: none;
+    width: 99px;
+  }
+
+  .main-footer__logo-img {
+    padding-bottom: 0;
   }
 }
 
@@ -72,7 +147,9 @@
     top: auto;
     background-color: $white;
     z-index: 2;
-    width: 560px;
-    height: 198px;
+    margin-top: 95px;
+    margin-left: 110px;
+    max-width: 565px;
+    padding: 56px 80px;
   }
 }

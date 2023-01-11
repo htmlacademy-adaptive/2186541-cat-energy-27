@@ -1,0 +1,21 @@
+@mixin wrapper() {
+  width: 320px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+@mixin wrapper-tablet() {
+  width: $tablet-width;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@mixin wrapper-desk() {
+  width: $desktop-width;
+  margin: auto;
+  padding-left: 110px;
+  padding-right: 110px;
+}
