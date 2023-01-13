@@ -1,9 +1,12 @@
 .owner-contacts {
   border: none;
+  padding: 0;
 }
 
 .owner-contacts__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .owner-contacts__legend {
@@ -12,15 +15,21 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  padding-top: 26px;
+  margin-bottom: 35px;
 }
 
 .owner-contacts__field {
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
 }
 
 .owner-contacts__name-field-input {
@@ -30,12 +39,31 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  padding: 14px 15px;
+  margin-left: 10px;
+  flex-grow: 1;
 }
 
+.owner-contacts__name-field-svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  right: 12px;
+}
+
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .owner-contacts__name-field-svg {
+    right: 16px;
+  }
+}
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
   .owner-contacts__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 80px;
   }
 }

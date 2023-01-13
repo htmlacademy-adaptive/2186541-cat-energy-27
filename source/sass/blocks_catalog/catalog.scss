@@ -1,16 +1,16 @@
-.catalog__wrapper {
-  padding: 10px 20px;
-}
-
 .catalog__title {
   margin: 0;
   padding: 0;
+  padding-left: 20px;
+  padding-top: 27px;
+  padding-bottom: 41px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: $black;
+  border-top: 1px solid #d9d9d9;
 }
 
 .catalog__list {
@@ -19,40 +19,76 @@
   padding: 0;
 }
 
+.catalog__item-wrapper {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: auto;
+
+  @media (max-width: $tablet-width) {
+    @include wrapper();
+  }
+}
+
 .catalog__item {
   margin: 0;
-  padding: 0;
-  background-color: $basic-grey;
-}
+  margin-bottom: 25px;
+  border-top: 1px solid $special_grey-2;
 
-.card__name {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
-.card__button {
-  width: 100%;
+  &--last {
+    border-bottom: 1px solid $special_grey-2;
+    padding-bottom: 25px;
+  }
 }
 
 /*Планшет*/
 @media (min-width: $tablet-width) {
+  .catalog__wrapper {
+    @include wrapper-tablet();
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
+    justify-content: center;
+  }
+
+  .catalog__item-wrapper {
+    padding: 161px 36px 39px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    position: relative;
   }
 
   .catalog__item {
     width: 324px;
+    background-color: $basic-grey;
+
+    &--last {
+      background-color: $white;
+      border: 2px solid $basic-grey;
+    }
+  }
+
+  .catalog__title {
+    border: none;
+
+    @include wrapper-tablet();
   }
 }
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    @include wrapper-desk();
+  }
+
+  .catalog__title {
+    @include wrapper-desk();
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
@@ -62,5 +98,11 @@
 
   .catalog__item {
     width: 245px;
+    box-sizing: border-box;
+  }
+
+  .catalog__item-wrapper {
+    padding: 0;
+    padding-top: 161px;
   }
 }

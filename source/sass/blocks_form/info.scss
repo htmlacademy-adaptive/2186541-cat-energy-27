@@ -1,3 +1,9 @@
+.info__field {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+
 .info__name-field-label {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -18,10 +24,25 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
+  margin-left: 13px;
+  flex-grow: 1;
+
+  &:hover {
+    border-color: $special_grey;
+    outline: none;
+  }
 }
 
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  /*Планшет*/
+}
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
-  /*hjhjh*/
+  .info__name-field-input {
+    padding: 11px 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

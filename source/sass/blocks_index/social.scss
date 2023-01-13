@@ -7,3 +7,23 @@
   width: 132px;
   align-items: center;
 }
+
+.social__link {
+  &:hover + .social__svg {
+    color: $basic-green;
+  }
+}
+
+.social__svg {
+  color: $special_dark-grey;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $basic-green;
+  }
+
+  &:active {
+    color: rgba($basic-green, 30%);
+  }
+}

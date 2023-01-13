@@ -1,0 +1,45 @@
+.additions {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.additions__wrapper {
+  margin-bottom: 35px;
+}
+
+.additions__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additions__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*Десктоп*/
+@media (min-width: $desktop-width) {
+  .additions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .additions__wrapper {
+    flex-grow: 1;
+  }
+
+  .additions__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additions__list {
+    margin-right: 80px;
+  }
+}
