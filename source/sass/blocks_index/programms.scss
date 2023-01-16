@@ -91,8 +91,10 @@
   padding-bottom: 24px;
   padding-left: 21px;
   text-transform: uppercase;
+  text-decoration: none;
   border: none;
   text-align: left;
+  background-color: transparent;
 }
 
 .programms__button-svg {
@@ -170,7 +172,7 @@
   .programms__item {
     flex-grow: 1;
     padding: 77px 67px 55px 52px;
-    margin-bottom: 71px;
+    margin-bottom: 52px;
     max-width: 570px;
 
     ::before {

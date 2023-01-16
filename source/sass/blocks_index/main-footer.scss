@@ -86,16 +86,22 @@
 
   .main-footer__wrapper {
     background-color: $basic-grey;
+    margin-top: 76px;
   }
 
   .main-footer__text-group {
     width: 628px;
     margin: auto;
+    padding: 0;
     padding-top: 60px;
     padding-bottom: 56px;
   }
 
   .main-footer__title {
+    br {
+      display: block;
+    }
+
     width: 172px;
     font-size: 20px;
     line-height: 26px;
@@ -136,6 +142,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .main-footer__wrapper {
+    margin-top: 20px;
   }
 
   .main-footer__map {
