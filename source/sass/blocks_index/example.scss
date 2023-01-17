@@ -118,19 +118,19 @@
 /*Десктоп*/
 @media (min-width: $desktop-width) {
   .example {
-    padding-bottom: 90px;
+    padding-bottom: 0;
     padding-top: 30px;
     border: none;
     background-color: inherit;
 
     &::after {
       z-index: -1;
-      bottom: 92px;
+      bottom: 0;
     }
   }
 
   .example__description {
-    max-width: 436px;
+    max-width: 432px;
     margin-bottom: 67px;
     margin-top: 144px;
     background-color: $light-grey;

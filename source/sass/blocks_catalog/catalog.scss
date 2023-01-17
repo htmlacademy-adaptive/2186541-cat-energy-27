@@ -62,6 +62,9 @@
     font-size: 60px;
     line-height: 60px;
     padding-top: 33px;
+    border: none;
+
+    @include wrapper-tablet();
   }
 
   .catalog__list {
@@ -93,12 +96,6 @@
       border: 2px solid $basic-grey;
       padding-bottom: 0;
     }
-  }
-
-  .catalog__title {
-    border: none;
-
-    @include wrapper-tablet();
   }
 }
 
