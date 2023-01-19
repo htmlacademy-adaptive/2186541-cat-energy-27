@@ -13,32 +13,35 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header--nojs">
     <div class="main-header__wrapper wrapper">
-      <a class="main-header__logo-1" href="index.html">
+      <a class="main-header__logo-1">
         <picture>
           <source media="(min-width: 768px)" srcset="img/logo-main-tablet.svg">
-        <img class="main-header__logo-image" src="img/logo-main.png" width="33" height="37"
-          alt="Лого магазина Cat energy">
+          <img class="main-header__logo-image" src="img/logo-main.png" width="33" height="37"
+            alt="Лого магазина Cat energy">
         </picture>
-        <img class="main-header__logo-image2" src="img/logo-main-2.png" width="101" height="18" alt="Магазин Cat energy">
-        <button class="main-header__toggle main-header__toggle--closed " type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <img class="main-header__logo-image2" src="img/logo-main-2.png" width="101" height="18"
+          alt="Магазин Cat energy">
+        <button class="main-header__toggle main-header__toggle--closed main-header__toggle--nojs" type="button"><span
+            class="visually-hidden">Открыть меню</span>
+        </button>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--catalog" href="index.html">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--catalog" href="catalog.html">
+              <a class="main-nav__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--catalog-active">
-              <a class="main-nav__link main-nav__link--catalog" href="form.html">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -49,84 +52,89 @@
   </header>
 
 
-  <section class="main-form wrapper">
-    <div class="main-form__wrapper wrapper">
+  <section class="main-form">
+    <div class="main-form__wrapper">
       <form class="main-form__form" action="#" method="post">
         <h1 class="main-form__title">Подбор программы</h1>
-        <p class="main-form__description">Заполните анкету, и мы подберем
-          программу питания для вашего кота</p>
+        <p class="main-form__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
         <div class="main-form__info-and-goal-wrapper">
           <div class="main-form__info info">
-          <div class="info__field info__name-field">
-            <label class="info__name-field-label" for="name">ИМЯ:*</label>
-            <input class="info__name-field-input" type="text" id="name" name="name" placeholder="барсик">
+            <div class="info__field info__name-field ">
+              <label class="info__name-field-label" for="name">ИМЯ:*</label>
+              <input class="info__name-field-input" type="text" id="name" name="name" placeholder="барсик">
+            </div>
+            <div class="info__field info__weight-field">
+              <label class="info__name-field-label" for="weight">Вес (кг):*</label>
+              <input class="info__name-field-input" type="text" id="weight" name="weight" placeholder="7">
+            </div>
+            <div class="info__field info__old-field">
+              <label class="info__name-field-label" for="old">Возраст (лет):</label>
+              <input class="info__name-field-input" type="text" id="old" name="old" placeholder="7">
+            </div>
           </div>
-          <div class="info__field info__weight-field">
-            <label class="info__name-field-label" for="weight">Вес (кг):*</label>
-            <input class="info__name-field-input" type="text" id="weight" name="weight" placeholder="7">
-          </div>
-          <div class="info__field info__old-field">
-            <label class="info__name-field-label" for="old">Возраст (лет):</label>
-            <input class="info__name-field-input" type="text" id="old" name="old" placeholder="7">
-          </div>
+          <fieldset class="main-form__goal goal">
+            <legend class="visually-hidden">Выберите цель</legend>
+            <ul class="goal__variants wrapper">
+              <li class="goal__item">
+                <label class="goal__control">
+                  <input class="visually-hidden goal__control-input" type="radio" name="slim" id="slim" checked>
+                  <span class="goal__control-mark"></span>
+                  <span class="goal__control-label">похудение</span>
+                </label>
+              </li>
+              <li class="goal__item">
+                <label class="goal__control">
+                  <input class="visually-hidden goal__control-input" type="radio" name="pro" id="pro">
+                  <span class="goal__control-mark"></span>
+                  <span class="goal__control-label">набор массы</span>
+                </label>
+              </li>
+              <li class="goal__item goal__item--last">
+                <label class="goal__control">
+                  <input class="visually-hidden goal__control-input" type="radio" name="help-me" id="help-me">
+                  <span class="goal__control-mark"></span>
+                  <span class="goal__control-label">не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
         </div>
-        <fieldset class="main-form__goal goal">
-          <legend class="visually-hidden">Выберите цель</legend>
-          <ul class="goal__variants">
-            <li class="goal__item">
-              <label class="goal__control">
-                <input class="visually-hidden goal__control-input" type="radio" name="slim" id="slim" checked>
-                <span class="goal__control-mark"></span>
-                <span class="goal__control-label">похудение</span>
-              </label>
-            </li>
-            <li class="goal__item">
-              <label class="goal__control">
-                <input class="visually-hidden goal__control-input" type="radio" name="pro" id="pro">
-                <span class="goal__control-mark"></span>
-                <span class="goal__control-label">набор массы</span>
-              </label>
-            </li>
-            <li class="goal__item goal__item--last">
-              <label class="goal__control">
-                <input class="visually-hidden goal__control-input" type="radio" name="help-me" id="help-me">
-                <span class="goal__control-mark"></span>
-                <span class="goal__control-label">не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-      </div>
         <fieldset class="main-form__owner-contacts owner-contacts">
-          <legend class="owner-contacts__legend">Контактные данные
+          <div class="owner-contacts__legend-wrapper">
+          <legend class="owner-contacts__legend wrapper">Контактные данные
             (владельца кота)</legend>
+          </div>
           <ul class="owner-contacts__list">
             <li class="owner-contacts__field owner-contacts__email-field">
               <label class="owner-contacts__name-field-label" for="email">E-mail:*</label>
               <input class="owner-contacts__name-field-input" type="text" id="email" name="email"
                 placeholder="kuklachev@gmail.com" required>
-                <svg class="owner-contacts__name-field-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke="currentColor"/>
-                </svg>
+              <svg class="owner-contacts__name-field-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke="currentColor" />
+              </svg>
             </li>
             <li class="owner-contacts__field owner-contacts__phone-field">
               <label class="owner-contacts__name-field-label" for="phone">Телефон:*</label>
               <input class="owner-contacts__name-field-input" type="text" id="phone" name="phone"
                 placeholder="8 (960) 900-60-90">
-                <svg class="owner-contacts__name-field-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z" stroke="currentColor"/>
-                </svg>
+              <svg class="owner-contacts__name-field-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z"
+                  stroke="currentColor" />
+              </svg>
             </li>
           </ul>
         </fieldset>
         <div class="main-form__comment comment">
-          <label class="comment__title" for="comment-textarea">Комментарий</label>
-          <textarea class="comment__textarea" id="comment-textarea" placeholder="Расскажите обо всех повадках кота"
+          <div class="comment__title-wrapper"><label class="comment__title" for="comment-textarea">Комментарий</label></div>
+          <textarea class="comment__textarea wrapper" id="comment-textarea" placeholder="Расскажите обо всех повадках кота"
             name="comment-textarea" required></textarea>
         </div>
 
         <fieldset class="main-form__addition addition">
-          <legend class="addition__legend">Дополнительно</legend>
+          <div class="addition__legend-wrapper"><legend class="addition__legend wrapper">Дополнительно</legend></div>
           <ul class="addition__variants">
             <li class="addition__item">
               <label class="addition__control">
@@ -164,9 +172,9 @@
           </ul>
         </fieldset>
         <div class="main-form__tablet-wrapper">
-        <button class="main-form__button button">отправить заявку</button>
-        <p class="main-form__important">* — Обязательные поля</p>
-      </div>
+          <button class="main-form__button button">отправить заявку</button>
+          <p class="main-form__important">* — Обязательные поля</p>
+        </div>
       </form>
     </div>
   </section>
@@ -225,10 +233,11 @@
         <div class="main-footer__copyright copyright">
           <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__svg" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="copyright__svg" width="27" height="34" viewBox="0 0 27 34" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
-                fill="currentColor"/>
+                fill="currentColor" />
             </svg>
           </a>
         </div>

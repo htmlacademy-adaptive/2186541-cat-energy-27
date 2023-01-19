@@ -1,13 +1,17 @@
 .main-form__title {
+  @include wrapper();
+
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin: 0 auto 38px;
+  margin: 28px auto 38px;
 }
 
 .main-form__description {
+  @include wrapper();
+
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -32,26 +36,24 @@
 
 .main-form__info {
   border-bottom: 1px solid $grey;
-  padding-bottom: 18px;
+  padding-bottom: 7px;
 }
 
 .main-form__goal {
   margin-top: 22px;
   border: none;
-  border-bottom: 1px solid $grey;
   padding: 0;
-  padding-bottom: 6px;
+  padding-bottom: 14px;
 }
 
 .main-form__comment {
-  margin-top: 24px;
   display: flex;
   flex-direction: column;
 }
 
 .main-form__addition {
+  @include wrapper();
   margin-top: 23px;
-  padding: 0;
 }
 
 

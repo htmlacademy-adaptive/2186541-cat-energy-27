@@ -1,7 +1,6 @@
 .goal__variants {
+  @include wrapper();
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .goal__item {

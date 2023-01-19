@@ -1,15 +1,23 @@
+
 .owner-contacts {
   border: none;
   padding: 0;
+  border-top: 1px solid $grey;
 }
 
 .owner-contacts__list {
+  @include wrapper();
+
   list-style: none;
-  margin: 0;
-  padding: 0;
+}
+
+.owner-contacts__legend-wrapper {
+  @include green-line();
 }
 
 .owner-contacts__legend {
+  @include wrapper();
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -17,7 +25,20 @@
   line-height: 26px;
   padding-top: 26px;
   margin-bottom: 35px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    display: block;
+    width: 219px;
+    height: 52px;
+    background-color: $white;
+    z-index: -1;
+  }
 }
+
 
 .owner-contacts__field {
   position: relative;
@@ -39,7 +60,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 14px 15px;
+  padding: 12px 15px;
   margin-left: 10px;
   flex-grow: 1;
 }
