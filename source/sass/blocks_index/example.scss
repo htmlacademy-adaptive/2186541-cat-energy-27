@@ -57,6 +57,7 @@
     border: 1px solid #e6e6e6;
     background-color: $white;
     padding-bottom: 700px;
+    padding-top: 50px;
 
     &::after {
       content: "";
@@ -117,11 +118,22 @@
 /*Десктоп*/
 @media (min-width: $desktop-width) {
   .example {
-    padding-bottom: 120px;
+    padding-bottom: 0;
+    padding-top: 30px;
+    border: none;
+    background-color: inherit;
+
+    &::after {
+      z-index: -1;
+      bottom: 0;
+    }
   }
 
   .example__description {
-    max-width: 436px;
+    max-width: 432px;
+    margin-bottom: 67px;
+    margin-top: 144px;
+    background-color: $light-grey;
   }
 
   .example__tablet-div {
@@ -131,19 +143,25 @@
 
   .example__results {
     justify-content: flex-start;
+    background-color: inherit;
+    margin-bottom: 50px;
   }
 
   .example__final {
+    width: 400px;
     text-align: left;
+    background-color: inherit;
   }
 
   .example__before-after {
     position: relative;
+    padding-bottom: 70px;
   }
 
   .example__before-after-image {
     position: absolute;
-    top: -300px;
+    top: -460px;
+    right: 0;
     width: 560px;
     height: 512px;
   }

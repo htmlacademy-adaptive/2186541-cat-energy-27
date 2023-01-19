@@ -8,38 +8,113 @@
   margin-bottom: 35px;
 }
 
-.additions__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
+.additions__title-wrapper {
+  @include green-line();
+  text-align: left;
+
+  .additions__title {
+    display: block;
+    position: relative;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 2px;
+      left: 0;
+      display: block;
+      width: 267px;
+      height: 24px;
+      background-color: $white;
+      z-index: -1;
+    }
+  }
 }
 
 .additions__list {
   list-style-type: none;
-  margin: 0;
   padding: 0;
+  margin: auto;
+  margin-top: 36px;
+}
+
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .additions__title-wrapper {
+    .additions__title {
+      @include wrapper-tablet();
+      font-size: 36px;
+      line-height: 36px;
+      padding-left: 67px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 2px;
+        left: 29px;
+        display: block;
+        width: 440px;
+        height: 36px;
+        background-color: $white;
+        z-index: -1;
+      }
+    }
+  }
+
+  .additions__wrapper {
+    @include wrapper-tablet();
+    box-sizing: border-box;
+    margin-bottom: 69px;
+  }
+
+  .additions-card__price {
+    margin-left: 51px;
+  }
+
+  .additions__list {
+    border-left: 1px solid $special_grey;
+    border-right: 1px solid $special_grey;
+    margin-top: 80px;
+    box-sizing: content-box;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
   .additions {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: block;
   }
 
   .additions__wrapper {
     flex-grow: 1;
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  .additions__title {
-    font-size: 36px;
-    line-height: 36px;
+  .additions__desktop {
+    @include wrapper-desk();
+    display: flex;
+  }
+
+  .additions__title-wrapper {
+    .additions__title {
+      @include wrapper-desk();
+      font-size: 36px;
+      line-height: 36px;
+    }
   }
 
   .additions__list {
     margin-right: 80px;
+    border-left: none;
+    border-right: none;
   }
 }

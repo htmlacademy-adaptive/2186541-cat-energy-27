@@ -1,9 +1,15 @@
-.present {
+.present__wrapper {
+  display: flex;
+  margin-bottom: 35px;
+  flex-direction: column;
+  align-items: center;
+  min-height: 290px;
+
   background-color: rgba(104, 183, 56, 0.85);
   background-image: url("../img/present.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   color: $white;
 
   @media (min-resolution: 2dppx) {
@@ -11,16 +17,13 @@
   }
 }
 
-.present__wrapper {
-  margin-top: 35px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 290px;
+.present__svg {
+  margin-top: 62px;
 }
 
 .present__description {
+  margin: 0;
+  margin-top: 47px;
   text-align: center;
   font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
@@ -33,7 +36,16 @@
 
 /*Планшет*/
 @media (min-width: $tablet-width) {
-  .present {
+  .present__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 707px;
+    margin: auto;
+    padding: 6px 124px 52px 77px;
+    box-sizing: border-box;
+    min-height: 200px;
+    background-position: top;
+
     background-image: url("../img/present_tablet_1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -41,20 +53,18 @@
     }
   }
 
-  .present__wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 506px;
-    margin: auto;
-    min-height: 200px;
-    margin-bottom: 76px;
-    margin-top: 69px;
-  }
-
   .present__description {
+    br {
+      display: block;
+    }
+
     margin-left: auto;
     text-align: left;
     width: 161px;
+  }
+
+  .present__svg {
+    margin-top: 43px;
   }
 }
 
@@ -62,7 +72,16 @@
 @media (min-width: $desktop-width) {
   .present {
     width: 245px;
-    height: 100%;
+    padding-left: 0;
+  }
+
+  .present__wrapper {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 245px;
+    min-height: 289px;
     background-image: url("../img/present_desktop_1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -70,12 +89,13 @@
     }
   }
 
-  .present__wrapper {
-    flex-direction: column;
-    align-items: center;
+  .present__svg {
+    margin-top: 65px;
+    margin-left: 83px;
   }
 
   .present__description {
+    margin-right: 42px;
     text-align: center;
   }
 }

@@ -1,14 +1,18 @@
 .button {
-  padding: 7px 44px;
+  display: block;
+  padding: 12px 44px;
   color: $white;
   background-color: $basic-green;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   border: none;
+  box-sizing: border-box;
 
   &:hover {
     background-color: $basic_green-2;
@@ -50,6 +54,32 @@
   }
 }
 
+.button--catalog {
+  width: 100%;
+  padding: 10px 44px;
+  color: $white;
+  background-color: $basic-green;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+
+  &:hover {
+    background-color: $basic_green-2;
+  }
+
+  &:active {
+    background-color: $basic_green-2;
+    color: rgba($white, 30%);
+  }
+
+  &:focus {
+    background-color: $basic_green-2;
+  }
+}
 
 /*Планшет*/
 @media (min-width: $tablet-width) {

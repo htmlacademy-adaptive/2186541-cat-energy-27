@@ -76,26 +76,31 @@
 /*Планшет*/
 @media (min-width: $tablet-width) {
   .main-footer__wrapper-block {
-    width: 767px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 45px;
+    margin-top: 53px;
     padding-bottom: 59px;
   }
 
   .main-footer__wrapper {
     background-color: $basic-grey;
+    margin-top: 76px;
   }
 
   .main-footer__text-group {
     width: 628px;
     margin: auto;
+    padding: 0;
     padding-top: 60px;
     padding-bottom: 56px;
   }
 
   .main-footer__title {
+    br {
+      display: block;
+    }
+
     width: 172px;
     font-size: 20px;
     line-height: 26px;
@@ -132,10 +137,20 @@
 /*Десктоп*/
 @media (min-width: $desktop-width) {
   .main-footer__wrapper-block {
-    width: 1220px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .main-footer__wrapper {
+    margin-top: 0;
+  }
+
+  .main-footer__address {
+    margin-left: -5px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
   }
 
   .main-footer__map {

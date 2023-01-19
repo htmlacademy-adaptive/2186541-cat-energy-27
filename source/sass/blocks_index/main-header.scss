@@ -11,8 +11,8 @@
 .main-header__logo-1 {
   display: block;
   padding-top: 10px;
-  padding-bottom: 17px;
-  align-items: center;
+  padding-bottom: 13px;
+  text-align: left;
 
   &:hover,
   &:focus {
@@ -25,7 +25,8 @@
 }
 
 .main-header__logo-image2 {
-  margin-left: 56px;
+  margin-left: 53px;
+  margin-bottom: 5px;
 }
 
 .main-header__toggle {
@@ -45,7 +46,7 @@
       content: "";
       position: absolute;
       display: block;
-      top: -25px;
+      top: -30px;
       left: 0;
       right: 0;
       width: 24px;
@@ -124,7 +125,8 @@
 /*Десктоп*/
 @media (min-width: $desktop-width) {
   .main-header__wrapper {
-    padding-top: 53px;
+    padding-top: 44px;
+    justify-content: flex-start;
   }
 
   .main-header__logo-image {

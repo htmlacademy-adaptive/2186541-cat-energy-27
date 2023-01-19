@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Cat energy</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/fav_svg.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/fav_180.png">
@@ -15,7 +15,7 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper wrapper">
-      <a class="main-header__logo-1">
+      <div class="main-header__logo-1">
         <picture>
           <source media="(min-width: 768px)" srcset="img/logo-main-tablet.svg">
           <img class="main-header__logo-image" src="img/logo-main.png" width="33" height="37"
@@ -25,8 +25,8 @@
           alt="Магазин Cat energy">
         <button class="main-header__toggle main-header__toggle--closed " type="button"><span
             class="visually-hidden">Открыть меню</span></button>
-      </a>
-      <nav class="main-nav main-nav--nojs">
+      </div>
+      <nav class="main-nav main-nav--nojs main-nav--closed">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -54,7 +54,7 @@
   <main class="main-container">
     <section class="catalog">
       <div class="catalog__wrapper">
-        <h2 class="catalog__title">Каталог продукции</h2>
+        <h2 class="catalog__title wrapper">Каталог продукции</h2>
         <ul class="catalog__list">
           <li class="catalog__item card">
             <div class="catalog__item-wrapper">
@@ -89,7 +89,7 @@
                   700 ₽
                 </dd>
               </dl>
-              <button class="card__button button">Заказать</button>
+              <button class="card__button button--catalog">Заказать</button>
             </div>
           </li>
           <li class="catalog__item card">
@@ -125,7 +125,7 @@
                   1000 ₽
                 </dd>
               </dl>
-              <button class="card__button button">Заказать</button>
+              <button class="card__button button--catalog">Заказать</button>
             </div>
           </li>
           <li class="catalog__item card card--min">
@@ -161,7 +161,7 @@
                   700 ₽
                 </dd>
               </dl>
-              <button class="card__button button">Заказать</button>
+              <button class="card__button button--catalog">Заказать</button>
             </div>
           </li>
           <li class="catalog__item card card--max">
@@ -197,7 +197,7 @@
                   1000 ₽
                 </dd>
               </dl>
-              <button class="card__button button">Заказать</button>
+              <button class="card__button button--catalog">Заказать</button>
             </div>
           </li>
           <li class="catalog__item card">
@@ -233,7 +233,7 @@
                   400 ₽
                 </dd>
               </dl>
-              <button class="card__button button">Заказать</button>
+              <button class="card__button button--catalog">Заказать</button>
             </div>
           </li>
           <li class="catalog__item card">
@@ -269,7 +269,7 @@
                   700 ₽
                 </dd>
               </dl>
-              <button class="card__button button">Заказать</button>
+              <button class="card__button button--catalog">Заказать</button>
             </div>
           </li>
           <li class="catalog__item card">
@@ -306,15 +306,15 @@
                   500 ₽
                 </dd>
               </dl>
-              <button class="card__button button">Заказать</button>
+              <button class="card__button button--catalog">Заказать</button>
             </div>
           </li>
           <li class="catalog__item catalog__item--last card">
-            <div class="card--last">
-              <svg class="card__svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor">
+            <div class="catalog__item-wrapper catalog__item-wrapper--last">
+              <svg class="card__svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                 <path stroke="#D3D3D3" stroke-width="2" d="M15 0v30M30 15H0" />
               </svg>
-              <h3 class="card__name">Показать еще 100500 товаров</h3>
+              <h3 class="card__name card__name--last">Показать еще 100500 товаров</h3>
               <div class="card__description">На самом деле вкусов гораздо больше!</div>
               <button class="card__button button-grey">показать все</button>
             </div>
@@ -322,105 +322,110 @@
         </ul>
       </div>
     </section>
-    <section class="additions wrapper">
-      <div class="additions__wrapper">
-        <h2 class="additions__title">
+    <section class="additions">
+      <div class="additions__title-wrapper">
+        <h2 class="additions__title wrapper">
           Дополнительные товары
         </h2>
-        <ul class="additions__list">
-          <li class="additions__item additions-card">
-            <div class="additionals-card__wrapper">
-              <h3 class="additions-card__title">
-                Сахарозаменитель
-              </h3>
-              <div class="additions-card__description">
-                <p class="additions-card__value">
-                  1 упаковка (100 г)
-                </p>
-                <p class="additions-card__price">
-                  200 ₽
-                </p>
-              </div>
-            </div>
-            <button class="button additions-card__button">
-              заказать
-            </button>
-          </li>
-          <li class="additions__item additions-card">
-            <div class="additionals-card__wrapper">
-              <h3 class="additions-card__title">
-                питьевая вода
-              </h3>
-              <div class="additions-card__description">
-                <p class="additions-card__value">
-                  5 литров
-                </p>
-                <p class="additions-card__price">
-                  50 ₽
-                </p>
-              </div>
-            </div>
-            <button class="additions-card__button button">
-              заказать
-            </button>
-          </li>
-          <li class="additions__item additions-card">
-            <div class="additionals-card__wrapper">
-              <h3 class="additions-card__title">
-                молоко
-              </h3>
-              <div class="additions-card__description">
-                <p class="additions-card__value">
-                  1 литр
-                </p>
-                <p class="additions-card__price">
-                  100 ₽
-                </p>
-              </div>
-            </div>
-            <button class="additions-card__button button">
-              заказать
-            </button>
-          </li>
-          <li class="additions__item additions-card additions-card--last">
-            <div class="additionals-card__wrapper">
-              <h3 class="additions-card__title">
-                витамины
-              </h3>
-              <div class="additions-card__description">
-                <p class="additions-card__value">
-                  1 упаковка (30 г)
-                </p>
-                <p class="additions-card__price">
-                  300 ₽
-                </p>
-              </div>
-            </div>
-            <button class="additions-card__button button">
-              заказать
-            </button>
-          </li>
-        </ul>
       </div>
-      <section class="present">
-        <div class="present__wrapper ">
-          <svg class="present__svg" width="78" height="80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M64.02 34.71H14.03a3.17 3.17 0 0 1-3.18-3.16v-9.47a3.17 3.17 0 0 1 3.18-3.16h49.98a3.17 3.17 0 0 1 3.19 3.16v9.47a3.17 3.17 0 0 1-3.18 3.16ZM14.03 21.35c-.4 0-.74.33-.74.73v9.47c0 .41.33.74.74.74h49.98c.41 0 .75-.33.75-.74v-9.47c0-.4-.34-.73-.75-.73H14.03Z"
-              fill="#fff" />
-            <path
-              d="M57.04 67.15H21a6.11 6.11 0 0 1-6.13-6.09V33.5c0-.67.55-1.2 1.22-1.2.68 0 1.22.53 1.22 1.2v27.56A3.68 3.68 0 0 0 21 64.73h36.04a3.68 3.68 0 0 0 3.7-3.67V33.5a1.22 1.22 0 0 1 2.44 0v27.56a6.11 6.11 0 0 1-6.14 6.09Z"
-              fill="#fff" />
-            <path
-              d="M39.02 67.15c-.67 0-1.22-.54-1.22-1.21V33.5c0-.67.55-1.2 1.22-1.2.68 0 1.22.53 1.22 1.2v32.44c0 .67-.54 1.2-1.22 1.2ZM23.81 21.34a7.8 7.8 0 0 1-3.17-10.6A7.9 7.9 0 0 1 31.3 7.6c5.82 3.13 8.96 11.86 9.09 12.23l-2.3.8c-.03-.08-2.96-8.22-7.95-10.9a5.46 5.46 0 0 0-7.36 2.17 5.39 5.39 0 0 0 2.2 7.32l-1.17 2.13Z"
-              fill="#fff" />
-            <path
-              d="m54.23 21.34-1.16-2.13a5.38 5.38 0 0 0-1.03-9.92 5.43 5.43 0 0 0-4.14.43c-4.98 2.68-7.91 10.82-7.94 10.9l-2.3-.8c.13-.37 3.27-9.1 9.08-12.23a7.86 7.86 0 0 1 11.29 9.1c-.6 2-1.95 3.66-3.8 4.65ZM61.95 50.93H16.09c-.67 0-1.22-.54-1.22-1.21 0-.67.55-1.21 1.22-1.21h45.86c.67 0 1.22.54 1.22 1.21 0 .67-.55 1.21-1.22 1.21Z"
-              fill="#fff" />
-          </svg>
-          <p class="present__description">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="additions__desktop">
+        <div class="additions__wrapper">
+
+          <ul class="additions__list">
+            <li class="additions__item additions-card">
+              <div class="additionals-card__wrapper">
+                <h3 class="additions-card__title">
+                  Сахарозаменитель
+                </h3>
+                <div class="additions-card__description">
+                  <p class="additions-card__value">
+                    1 упаковка (100 г)
+                  </p>
+                  <p class="additions-card__price">
+                    200 ₽
+                  </p>
+                </div>
+              </div>
+              <button class="additions-card__button button--catalog wrapper">
+                заказать
+              </button>
+            </li>
+            <li class="additions__item additions-card">
+              <div class="additionals-card__wrapper">
+                <h3 class="additions-card__title">
+                  питьевая вода
+                </h3>
+                <div class="additions-card__description">
+                  <p class="additions-card__value">
+                    5 литров
+                  </p>
+                  <p class="additions-card__price">
+                    50 ₽
+                  </p>
+                </div>
+              </div>
+              <button class="additions-card__button button--catalog wrapper">
+                заказать
+              </button>
+            </li>
+            <li class="additions__item additions-card">
+              <div class="additionals-card__wrapper">
+                <h3 class="additions-card__title">
+                  молоко
+                </h3>
+                <div class="additions-card__description">
+                  <p class="additions-card__value">
+                    1 литр
+                  </p>
+                  <p class="additions-card__price">
+                    100 ₽
+                  </p>
+                </div>
+              </div>
+              <button class="additions-card__button button--catalog wrapper">
+                заказать
+              </button>
+            </li>
+            <li class="additions__item additions-card additions-card--last">
+              <div class="additionals-card__wrapper">
+                <h3 class="additions-card__title">
+                  витамины
+                </h3>
+                <div class="additions-card__description">
+                  <p class="additions-card__value">
+                    1 упаковка (30 г)
+                  </p>
+                  <p class="additions-card__price">
+                    300 ₽
+                  </p>
+                </div>
+              </div>
+              <button class="additions-card__button button--catalog wrapper">
+                заказать
+              </button>
+            </li>
+          </ul>
         </div>
-      </section>
+        <section class="present wrapper">
+          <div class="present__wrapper">
+            <svg class="present__svg" width="78" height="80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M64.02 34.71H14.03a3.17 3.17 0 0 1-3.18-3.16v-9.47a3.17 3.17 0 0 1 3.18-3.16h49.98a3.17 3.17 0 0 1 3.19 3.16v9.47a3.17 3.17 0 0 1-3.18 3.16ZM14.03 21.35c-.4 0-.74.33-.74.73v9.47c0 .41.33.74.74.74h49.98c.41 0 .75-.33.75-.74v-9.47c0-.4-.34-.73-.75-.73H14.03Z"
+                fill="#fff" />
+              <path
+                d="M57.04 67.15H21a6.11 6.11 0 0 1-6.13-6.09V33.5c0-.67.55-1.2 1.22-1.2.68 0 1.22.53 1.22 1.2v27.56A3.68 3.68 0 0 0 21 64.73h36.04a3.68 3.68 0 0 0 3.7-3.67V33.5a1.22 1.22 0 0 1 2.44 0v27.56a6.11 6.11 0 0 1-6.14 6.09Z"
+                fill="#fff" />
+              <path
+                d="M39.02 67.15c-.67 0-1.22-.54-1.22-1.21V33.5c0-.67.55-1.2 1.22-1.2.68 0 1.22.53 1.22 1.2v32.44c0 .67-.54 1.2-1.22 1.2ZM23.81 21.34a7.8 7.8 0 0 1-3.17-10.6A7.9 7.9 0 0 1 31.3 7.6c5.82 3.13 8.96 11.86 9.09 12.23l-2.3.8c-.03-.08-2.96-8.22-7.95-10.9a5.46 5.46 0 0 0-7.36 2.17 5.39 5.39 0 0 0 2.2 7.32l-1.17 2.13Z"
+                fill="#fff" />
+              <path
+                d="m54.23 21.34-1.16-2.13a5.38 5.38 0 0 0-1.03-9.92 5.43 5.43 0 0 0-4.14.43c-4.98 2.68-7.91 10.82-7.94 10.9l-2.3-.8c.13-.37 3.27-9.1 9.08-12.23a7.86 7.86 0 0 1 11.29 9.1c-.6 2-1.95 3.66-3.8 4.65ZM61.95 50.93H16.09c-.67 0-1.22-.54-1.22-1.21 0-.67.55-1.21 1.22-1.21h45.86c.67 0 1.22.54 1.22 1.21 0 .67-.55 1.21-1.22 1.21Z"
+                fill="#fff" />
+            </svg>
+            <p class="present__description">Закажите все <br>и получите чехол для кота в подарок!</p>
+          </div>
+        </section>
+      </div>
     </section>
   </main>
 
@@ -430,7 +435,7 @@
 
       <div class="main-footer__text-group wrapper">
         <h2 class="main-footer__title">
-          приглашаем к сотрудничеству дилеров!
+          приглашаем <br>к сотрудничеству дилеров!
         </h2>
         <p class="main-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>

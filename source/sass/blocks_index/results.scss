@@ -64,5 +64,7 @@
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
-  /*ppp*/
+  .results__description {
+    background-color: $light-grey;
+  }
 }
