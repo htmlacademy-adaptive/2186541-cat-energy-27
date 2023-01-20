@@ -20,6 +20,7 @@
 .info__name-field-input {
   border: 1px solid $light-grey;
   padding: 13px 20px;
+  padding-right: 9px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -38,7 +39,9 @@
 
 /*Планшет*/
 @media (min-width: $tablet-width) {
-  /*Планшет*/
+  .info__field {
+    @include wrapper-tablet();
+  }
 }
 
 /*Десктоп*/

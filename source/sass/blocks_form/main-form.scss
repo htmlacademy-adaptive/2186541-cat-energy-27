@@ -32,6 +32,8 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+  margin-top: 19px;
+  margin-bottom: 33px;
 }
 
 .main-form__info {
@@ -52,10 +54,14 @@
 }
 
 .main-form__addition {
-  @include wrapper();
+  padding: 0;
   margin-top: 23px;
 }
 
+.main-form__button {
+  max-width: 280px;
+  margin: auto;
+}
 
 /*Планшет*/
 @media (min-width: $tablet-width) {
@@ -72,12 +78,16 @@
   }
 
   .main-form__title {
+    @include wrapper-tablet();
+
     margin-bottom: 54px;
     font-size: 60px;
     line-height: 60px;
   }
 
   .main-form__description {
+    @include wrapper-tablet();
+
     margin-bottom: 66px;
     font-size: 20px;
     line-height: 30px;

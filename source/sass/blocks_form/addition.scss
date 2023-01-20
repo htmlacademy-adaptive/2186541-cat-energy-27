@@ -4,12 +4,30 @@
   flex-direction: column;
 }
 
+.addition__legend-wrapper {
+  @include green-line();
+}
+
 .addition__legend {
+  @include wrapper();
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 2px;
+    left: 0;
+    display: block;
+    width: 183px;
+    height: 26px;
+    background-color: $white;
+    z-index: -1;
+  }
 }
 
 .addition__control-label {
@@ -22,10 +40,11 @@
 }
 
 .addition__variants {
+  @include wrapper();
+
+  display: block;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-top: 34px;
+  margin-top: 33px;
   margin-bottom: 21px;
 }
 
@@ -67,13 +86,15 @@
 }
 
 .addition__item {
-  margin-bottom: 13px;
+  margin-bottom: 11px;
 }
 
 
 /*Планшетная версия*/
 @media (min-width: $tablet-width) {
   .addition__variants {
+    @include wrapper-tablet();
+
     max-width: 533px;
     display: grid;
     grid-template-columns: 1fr 1fr;
