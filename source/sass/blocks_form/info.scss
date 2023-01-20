@@ -41,6 +41,19 @@
 @media (min-width: $tablet-width) {
   .info__field {
     @include wrapper-tablet();
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 15px;
+  }
+
+  .info__name-field-label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .info__name-field-input {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -50,5 +63,10 @@
     padding: 11px 20px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .info__field {
+    padding: 0;
+    width: 569px;
   }
 }

@@ -44,6 +44,24 @@
 
 /*Планшет*/
 @media (min-width: $tablet-width) {
+  .comment__title-wrapper {
+    margin-top: 48px;
+    margin-bottom: 76px;
+
+    .comment__title {
+      @include wrapper-tablet();
+      padding-left: 70px;
+      font-size: 36px;
+      line-height: 36px;
+
+      &::before {
+        left: 31px;
+        width: 259px;
+        height: 52px;
+      }
+    }
+  }
+
   .comment__textarea {
     max-width: 631px;
     font-size: 20px;
@@ -56,5 +74,19 @@
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
-  /*hhh*/
+  .comment__title-wrapper {
+    .comment__title {
+      @include wrapper-desk();
+
+      &::before {
+        left: 31px;
+        width: 259px;
+        height: 52px;
+      }
+    }
+  }
+
+  .comment__textarea {
+    max-width: 1220px;
+  }
 }

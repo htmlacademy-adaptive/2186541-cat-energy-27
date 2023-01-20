@@ -76,8 +76,41 @@
 
 /*Планшет*/
 @media (min-width: $tablet-width) {
+  .owner-contacts {
+    border: none;
+  }
+
+  .owner-contacts__legend {
+    @include wrapper-tablet();
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 54px;
+    margin-bottom: 75px;
+
+    &::before {
+      width: 590px;
+      height: 52px;
+      left: 30px;
+    }
+  }
+
+  .owner-contacts__field {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .owner-contacts__name-field-input {
+    margin-left: 22px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   .owner-contacts__list {
     @include wrapper-tablet();
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
   .owner-contacts__name-field-svg {
@@ -87,7 +120,18 @@
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
+  .owner-contacts__legend {
+    @include wrapper-desk();
+
+    &::before {
+      width: 590px;
+      height: 52px;
+      left: 30px;
+    }
+  }
+
   .owner-contacts__list {
+    @include wrapper-desk();
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px 80px;

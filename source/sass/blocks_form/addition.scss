@@ -94,11 +94,29 @@
 @media (min-width: $tablet-width) {
   .addition__variants {
     @include wrapper-tablet();
-
-    max-width: 533px;
+    margin-top: 56px;
+    max-width: 688px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px 123px;
+    gap: 21px 59px;
+  }
+
+  .addition__legend {
+    @include wrapper-tablet();
+    padding-left: 70px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      left: 31px;
+      width: 291px;
+      height: 26px;
+    }
+  }
+
+  .addition__control-label {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .addition__control-mark {
@@ -109,9 +127,20 @@
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
+  .addition__legend {
+    @include wrapper-desk();
+
+    &::before {
+      left: 31px;
+      width: 291px;
+      height: 26px;
+    }
+  }
+
   .addition__variants {
+    @include wrapper-desk();
     display: flex;
-    max-width: 1100px;
     gap: 32px 84px;
+    max-width: 1220px;
   }
 }

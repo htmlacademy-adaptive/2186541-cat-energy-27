@@ -55,7 +55,15 @@
 /*Планшет*/
 @media (min-width: $tablet-width) {
   .goal__variants {
-    @include wrapper-tablet();
+    border: 1px solid $light-grey;
+    width: 630px;
+    padding: 25px 27px;
+    margin-top: 48px;
+  }
+
+  .goal__control-label {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .goal__control-mark {
@@ -63,9 +71,19 @@
     height: 40px;
     margin-right: 20px;
   }
+
+  .goal__control-input[type="radio"]:checked + .goal__control-mark {
+    &::before {
+      width: 20px;
+      height: 17px;
+    }
+  }
 }
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
-  /*ppp*/
+  .goal__variants {
+    margin: 0;
+    width: 568px;
+  }
 }

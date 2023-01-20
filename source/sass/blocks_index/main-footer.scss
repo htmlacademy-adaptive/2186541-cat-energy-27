@@ -81,11 +81,19 @@
     align-items: center;
     margin-top: 53px;
     padding-bottom: 59px;
+
+    &--form {
+      margin-top: 49px;
+    }
   }
 
   .main-footer__wrapper {
     background-color: $basic-grey;
     margin-top: 76px;
+
+    &--form {
+      margin-top: -12px;
+    }
   }
 
   .main-footer__text-group {
