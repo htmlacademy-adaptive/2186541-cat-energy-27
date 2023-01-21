@@ -4,13 +4,17 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
-  width: 132px;
+  width: 128px;
   align-items: center;
 }
 
 .social__link {
   &:hover + .social__svg {
     color: $basic-green;
+  }
+
+  &--youtube {
+    padding-right: 6px;
   }
 }
 

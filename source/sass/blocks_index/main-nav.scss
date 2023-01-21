@@ -75,6 +75,7 @@
 
   .main-nav__item {
     border-top: none;
+    padding-top: 23px;
 
     &--active {
       border-bottom: 2px solid $basic-green;
@@ -85,15 +86,23 @@
     &--catalog-active {
       border-bottom: 2px solid $basic-green;
       padding-bottom: 8px;
-      margin-top: -11px;
+      margin-top: -20px;
     }
   }
 }
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
+  .main-nav__list {
+    min-width: 477px;
+    padding-top: 13px;
+  }
+
   .main-nav__link {
     color: $white;
+    min-width: 170px;
+    font-size: 20px;
+    line-height: 30px;
 
     &:hover {
       color: rgba($white, 60%);
@@ -117,11 +126,10 @@
   }
 
   .main-nav__item {
-    font-size: 20px;
-    line-height: 30px;
-
     &--active {
       border-bottom: 2px solid $white;
+      padding-bottom: 6px;
+      margin-top: -19px;
     }
 
     &--catalog-active {

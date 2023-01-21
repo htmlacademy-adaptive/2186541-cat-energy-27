@@ -120,7 +120,7 @@
       top: auto;
       left: auto;
       right: 27px;
-      bottom: 77px;
+      bottom: 83px;
     }
 
     &--slim {
@@ -179,15 +179,15 @@
 
   .programms__item {
     flex-grow: 1;
-    padding: 77px 67px 55px 52px;
+    padding: 73px 67px 55px 52px;
     margin-bottom: 52px;
     max-width: 570px;
 
     ::before {
       background-size: auto  100px;
-      width: 134px;
-      height: 100px;
-      top: 47px;
+      width: 136px;
+      height: 101px;
+      top: 41px;
       left: 33px;
       right: auto;
       bottom: auto;
@@ -203,6 +203,6 @@
 
   .programms__description {
     width: 457px;
-    margin-bottom: 23px;
+    margin-bottom: 28px;
   }
 }

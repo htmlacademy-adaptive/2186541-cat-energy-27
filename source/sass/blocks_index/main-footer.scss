@@ -67,8 +67,8 @@
   margin: 0;
   padding: 0;
   align-items: center;
-  padding-bottom: 18px;
-  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-top: 21px;
   border-bottom: 1px solid $grey;
   border-top: 1px solid $grey;
 }
@@ -79,7 +79,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 53px;
+    margin-top: 42px;
     padding-bottom: 59px;
 
     &--form {
@@ -105,7 +105,7 @@
     margin: auto;
     padding: 0;
     padding-top: 60px;
-    padding-bottom: 56px;
+    padding-bottom: 47px;
   }
 
   .main-footer__title {
@@ -113,6 +113,7 @@
       display: block;
     }
 
+    padding-top: 3px;
     width: 172px;
     font-size: 20px;
     line-height: 26px;
@@ -132,17 +133,19 @@
   }
 
   .main-footer__copyright {
-    width: 163px;
+    width: 167px;
     padding: 0;
   }
 
   .main-footer__social {
     border: none;
     width: 99px;
+    margin-left: -10px;
   }
 
   .main-footer__logo-img {
     padding-bottom: 0;
+    width: 143px;
   }
 }
 
@@ -153,6 +156,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 52px;
 
     &--form {
       margin-top: 55px;
@@ -165,18 +169,18 @@
 
   .main-footer__address {
     margin-left: -5px;
-    margin-bottom: 0;
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 20px;
     text-align: left;
 
     &--form {
       width: 151px;
-      margin-top: -5px;
     }
   }
 
   .main-footer__city {
+    margin-top: -16px;
     width: 100px;
   }
 
@@ -191,8 +195,9 @@
     z-index: 2;
     margin-top: 95px;
     margin-left: 110px;
-    max-width: 565px;
-    padding: 43px 80px;
+    max-width: 571px;
+    padding: 55px 80px;
+    padding-bottom: 50px;
 
     &--form {
       width: 561px;
