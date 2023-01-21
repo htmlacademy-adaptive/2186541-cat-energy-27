@@ -9,6 +9,9 @@
   <link rel="icon" href="img/favicon/fav_svg.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/fav_180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -60,12 +63,18 @@
             <div class="catalog__item-wrapper">
               <a class="card__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/catalog/chicken_min_1x_desktop.webp , img/catalog/chicken_min_2x_desktop.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog/chicken_min_1x_desktop.png 1x, img/catalog/chicken_min_2x_desktop.png 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/chicken_min_1x_tablet.webp , img/catalog/chicken_min_2x_tablet.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/catalog/chicken_min_1x_tablet.png 1x, img/catalog/chicken_min_2x_tablet.png 2x">
-                  <img class="card__image" src="img/catalog/chicken_min_1x.png" src="img/catalog/chicken_min_2x.png 2x"
-                    alt="Cat Energy PRO 500 г">
+                  <source type="image/webp"
+                    srcset="img/catalog/chicken_min_1x.webp , img/catalog/chicken_min_2x.webp 2x">
+                  <img class="card__image" src="img/catalog/chicken_min_1x.png"
+                    srcset="img/catalog/chicken_min_2x.png 2x" alt="Cat Energy PRO 500 г">
                 </picture>
               </a>
               <h3 class="card__name">Cat Energy PRO 500 г</h3>
@@ -96,12 +105,18 @@
             <div class="catalog__item-wrapper ">
               <a class="card__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/catalog/chicken_max_1x_desktop.webp , img/catalog/chicken_max_2x_desktop.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog/chicken_max_1x_desktop.png 1x, img/catalog/chicken_max_2x_desktop.png 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/chicken_max_1x_tablet.webp , img/catalog/chicken_max_2x_tablet.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/catalog/chicken_max_1x_tablet.png 1x, img/catalog/chicken_max_2x_tablet.png 2x">
-                  <img class="card__image" src="img/catalog/chicken_max_1x.png" src="img/catalog/chicken_max_2x.png 2x"
-                    alt="Cat Energy PRO 1000 г">
+                  <source type="image/webp"
+                    srcset="img/catalog/chicken_max_1x.webp , img/catalog/chicken_max_2x.webp 2x">
+                  <img class="card__image" src="img/catalog/chicken_max_1x.png"
+                    srcset="img/catalog/chicken_max_2x.png 2x" alt="Cat Energy PRO 1000 г">
                 </picture>
               </a>
               <h3 class="card__name">Cat Energy PRO 1000 г</h3>
@@ -132,11 +147,16 @@
             <div class="catalog__item-wrapper">
               <a class="card__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/catalog/fish_min_1x_desktop.webp , img/catalog/fish_min_2x_desktop.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog/fish_min_1x_desktop.png 1x, img/catalog/fish_min_2x_desktop.png 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/fish_min_1x_tablet.webp , img/catalog/fish_min_2x_tablet.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/catalog/fish_min_1x_tablet.png 1x, img/catalog/fish_min_2x_tablet.png 2x">
-                  <img class="card__image" src="img/catalog/fish_min_1x.png" src="img/catalog/fish_min_2x.png 2x"
+                  <source type="image/webp" srcset="img/catalog/fish_min_1x.webp , img/catalog/fish_min_2x.webp 2x">
+                  <img class="card__image" src="img/catalog/fish_min_1x.png" srcset="img/catalog/fish_min_2x.png 2x"
                     alt="Cat Energy PRO 500 г">
                 </picture>
               </a>
@@ -168,11 +188,16 @@
             <div class="catalog__item-wrapper">
               <a class="card__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/catalog/fish_max_1x_desktop.webp , img/catalog/fish_max_2x_desktop.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog/fish_max_1x_desktop.png 1x, img/catalog/fish_max_2x_desktop.png 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/fish_max_1x_tablet.webp , img/catalog/fish_max_2x_tablet.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/catalog/fish_max_1x_tablet.png 1x, img/catalog/fish_max_2x_tablet.png 2x">
-                  <img class="card__image" src="img/catalog/fish_max_1x.png" src="img/catalog/fish_max_2x.png 2x"
+                  <source type="image/webp" srcset="img/catalog/fish_max_1x.webp , img/catalog/fish_max_2x.webp 2x">
+                  <img class="card__image" src="img/catalog/fish_max_1x.png" srcset="img/catalog/fish_max_2x.png 2x"
                     alt="Cat Energy PRO 1000 г">
                 </picture>
               </a>
@@ -204,11 +229,16 @@
             <div class="catalog__item-wrapper">
               <a class="card__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/catalog/grecha_min_1x_desktop.webp , img/catalog/grecha_min_2x_desktop.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog/grecha_min_1x_desktop.png 1x, img/catalog/grecha_min_2x_desktop.png 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/grecha_min_1x_tablet.webp , img/catalog/grecha_min_2x_tablet.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/catalog/grecha_min_1x_tablet.png 1x, img/catalog/grecha_min_2x_tablet.png 2x">
-                  <img class="card__image" src="img/catalog/grecha_min_1x.png" src="img/catalog/grecha_min_2x.png 2x"
+                  <source type="image/webp" srcset="img/catalog/grecha_min_1x.webp , img/catalog/grecha_min_2x.webp 2x">
+                  <img class="card__image" src="img/catalog/grecha_min_1x.png" srcset="img/catalog/grecha_min_2x.png 2x"
                     alt="Cat Energy PRO 500 г">
                 </picture>
               </a>
@@ -240,11 +270,16 @@
             <div class="catalog__item-wrapper">
               <a class="card__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/catalog/grecha_max_1x_desktop.webp , img/catalog/grecha_max_2x_desktop.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog/grecha_max_1x_desktop.png 1x, img/catalog/grecha_max_2x_desktop.png 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/grecha_max_1x_tablet.webp , img/catalog/grecha_max_2x_tablet.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/catalog/grecha_max_1x_tablet.png 1x, img/catalog/grecha_max_2x_tablet.png 2x">
-                  <img class="card__image" src="img/catalog/grecha_max_1x.png" src="img/catalog/grecha_max_2x.png 2x"
+                  <source type="image/webp" srcset="img/catalog/grecha_max_1x.webp , img/catalog/grecha_max_2x.webp 2x">
+                  <img class="card__image" src="img/catalog/grecha_max_1x.png" srcset="img/catalog/grecha_max_2x.png 2x"
                     alt="Cat Energy PRO 1000 г">
                 </picture>
               </a>
@@ -277,11 +312,16 @@
 
               <a class="card__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/catalog/rice_1x_desktop.webp , img/catalog/rice_2x_desktop.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog/rice_1x_desktop.png 1x, img/catalog/rice_2x_desktop.png 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/catalog/rice_1x_tablet.webp , img/catalog/rice_2x_tablet.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/catalog/rice_1x_tablet.png 1x, img/catalog/rice_2x_tablet.png 2x">
-                  <img class="card__image" src="img/catalog/rice_1x.png" src="img/catalog/rice_2x.png 2x"
+                  <source type="image/webp" srcset="img/catalog/rice_1x.webp , img/catalog/rice_2x.webp 2x">
+                  <img class="card__image" src="img/catalog/rice_1x.png" srcset="img/catalog/rice_2x.png 2x"
                     alt="Cat Energy slim 500 г">
                 </picture>
               </a>

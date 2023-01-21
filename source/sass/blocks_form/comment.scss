@@ -1,13 +1,36 @@
-.comment__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  margin-bottom: 38px;
+.comment__title-wrapper {
+  @include green-line();
+  margin-top: 8px;
+  margin-bottom: 37px;
+
+  .comment__title {
+    @include wrapper();
+
+    display: block;
+    position: relative;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 2px;
+      left: 0;
+      display: block;
+      width: 163px;
+      height: 52px;
+      background-color: $white;
+      z-index: -1;
+    }
+  }
 }
 
 .comment__textarea {
+  max-width: 280px;
+  display: block;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -21,7 +44,26 @@
 
 /*Планшет*/
 @media (min-width: $tablet-width) {
+  .comment__title-wrapper {
+    margin-top: 48px;
+    margin-bottom: 76px;
+
+    .comment__title {
+      @include wrapper-tablet();
+      padding-left: 70px;
+      font-size: 36px;
+      line-height: 36px;
+
+      &::before {
+        left: 31px;
+        width: 259px;
+        height: 52px;
+      }
+    }
+  }
+
   .comment__textarea {
+    max-width: 631px;
     font-size: 20px;
     line-height: 30px;
     min-height: 174px;
@@ -32,5 +74,22 @@
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
-  /*hhh*/
+  .comment__title-wrapper {
+    margin-top: 50px;
+
+    .comment__title {
+      @include wrapper-desk();
+
+      &::before {
+        left: 71px;
+        width: 261px;
+        height: 52px;
+      }
+    }
+  }
+
+  .comment__textarea {
+    max-width: 1220px;
+    margin-bottom: 67px;
+  }
 }

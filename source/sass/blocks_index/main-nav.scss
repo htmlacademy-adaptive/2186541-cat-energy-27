@@ -59,6 +59,7 @@
     min-width: 440px;
     justify-content: space-between;
     padding-top: 5px;
+    flex-wrap: wrap;
   }
 
   .main-nav__link {
@@ -116,6 +117,9 @@
   }
 
   .main-nav__item {
+    font-size: 20px;
+    line-height: 30px;
+
     &--active {
       border-bottom: 2px solid $white;
     }

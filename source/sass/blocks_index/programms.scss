@@ -108,7 +108,7 @@
 /*Планшетная версия*/
 @media (min-width: $tablet-width) {
   .programms__item {
-    padding: 77px 62px 53px 52px;
+    padding: 79px 62px 53px 52px;
     margin-bottom: 30px;
     width: 708px;
     box-sizing: border-box;
@@ -120,7 +120,15 @@
       top: auto;
       left: auto;
       right: 27px;
-      bottom: 82px;
+      bottom: 77px;
+    }
+
+    &--slim {
+      ::before {
+        width: 268px;
+        height: 208px;
+        background-size: auto  208px;
+      }
     }
   }
 
@@ -137,7 +145,7 @@
     width: 340px;
     margin: 0;
     padding: 0;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     border-bottom: none;
     font-size: 16px;
     line-height: 24px;

@@ -1,23 +1,45 @@
+
 .owner-contacts {
   border: none;
   padding: 0;
+  border-top: 1px solid $grey;
 }
 
 .owner-contacts__list {
+  @include wrapper();
+
   list-style: none;
-  margin: 0;
-  padding: 0;
+}
+
+.owner-contacts__legend-wrapper {
+  @include green-line();
+
+  margin-top: 28px;
 }
 
 .owner-contacts__legend {
+  @include wrapper();
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
-  padding-top: 26px;
   margin-bottom: 35px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    display: block;
+    width: 219px;
+    height: 52px;
+    background-color: $white;
+    z-index: -1;
+  }
 }
+
 
 .owner-contacts__field {
   position: relative;
@@ -39,7 +61,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 14px 15px;
+  padding: 12px 15px;
   margin-left: 10px;
   flex-grow: 1;
 }
@@ -49,11 +71,48 @@
   width: 20px;
   height: 20px;
   margin: 0;
-  right: 12px;
+  right: 16px;
 }
 
 /*Планшет*/
 @media (min-width: $tablet-width) {
+  .owner-contacts {
+    border: none;
+  }
+
+  .owner-contacts__legend {
+    @include wrapper-tablet();
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 54px;
+    margin-bottom: 75px;
+
+    &::before {
+      width: 590px;
+      height: 52px;
+      left: 30px;
+    }
+  }
+
+  .owner-contacts__field {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .owner-contacts__name-field-input {
+    margin-left: 22px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .owner-contacts__list {
+    @include wrapper-tablet();
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
   .owner-contacts__name-field-svg {
     right: 16px;
   }
@@ -61,7 +120,23 @@
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
+  .owner-contacts__legend-wrapper {
+    margin-top: 43px;
+    margin-bottom: 74px;
+  }
+
+  .owner-contacts__legend {
+    @include wrapper-desk();
+
+    &::before {
+      width: 592px;
+      height: 52px;
+      left: 71px;
+    }
+  }
+
   .owner-contacts__list {
+    @include wrapper-desk();
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px 80px;

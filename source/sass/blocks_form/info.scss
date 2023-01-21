@@ -1,4 +1,6 @@
 .info__field {
+  @include wrapper();
+
   margin-bottom: 14px;
   display: flex;
   align-items: center;
@@ -12,11 +14,13 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
+  white-space: nowrap;
 }
 
 .info__name-field-input {
   border: 1px solid $light-grey;
-  padding: 14px 20px;
+  padding: 13px 20px;
+  padding-right: 9px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -35,7 +39,22 @@
 
 /*Планшет*/
 @media (min-width: $tablet-width) {
-  /*Планшет*/
+  .info__field {
+    @include wrapper-tablet();
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 15px;
+  }
+
+  .info__name-field-label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .info__name-field-input {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 /*Десктоп*/
@@ -44,5 +63,11 @@
     padding: 11px 20px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .info__field {
+    padding: 0;
+    width: 569px;
+    margin-bottom: 19px;
   }
 }

@@ -4,12 +4,30 @@
   flex-direction: column;
 }
 
+.addition__legend-wrapper {
+  @include green-line();
+}
+
 .addition__legend {
+  @include wrapper();
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 2px;
+    left: 0;
+    display: block;
+    width: 183px;
+    height: 26px;
+    background-color: $white;
+    z-index: -1;
+  }
 }
 
 .addition__control-label {
@@ -22,10 +40,11 @@
 }
 
 .addition__variants {
+  @include wrapper();
+
+  display: block;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-top: 34px;
+  margin-top: 33px;
   margin-bottom: 21px;
 }
 
@@ -67,17 +86,37 @@
 }
 
 .addition__item {
-  margin-bottom: 13px;
+  margin-bottom: 11px;
 }
 
 
 /*Планшетная версия*/
 @media (min-width: $tablet-width) {
   .addition__variants {
-    max-width: 533px;
+    @include wrapper-tablet();
+    margin-top: 56px;
+    max-width: 688px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px 123px;
+    gap: 21px 59px;
+  }
+
+  .addition__legend {
+    @include wrapper-tablet();
+    padding-left: 70px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      left: 31px;
+      width: 291px;
+      height: 26px;
+    }
+  }
+
+  .addition__control-label {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .addition__control-mark {
@@ -88,9 +127,20 @@
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
+  .addition__legend {
+    @include wrapper-desk();
+
+    &::before {
+      left: 71px;
+    }
+  }
+
   .addition__variants {
-    display: flex;
-    max-width: 1100px;
-    gap: 32px 84px;
+    @include wrapper-desk();
+    display: grid;
+    margin-top: 57px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px 80px;
+    max-width: 1440px;
   }
 }
