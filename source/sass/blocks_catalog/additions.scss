@@ -97,6 +97,7 @@
     flex-grow: 1;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 92px;
   }
 
   .additions__desktop {
@@ -109,6 +110,10 @@
       @include wrapper-desk();
       font-size: 36px;
       line-height: 36px;
+
+      &::before {
+        width: 455px;
+      }
     }
   }
 

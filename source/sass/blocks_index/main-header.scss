@@ -25,7 +25,7 @@
 }
 
 .main-header__logo-image2 {
-  margin-left: 53px;
+  margin-left: 58px;
   margin-bottom: 5px;
 }
 
@@ -46,7 +46,7 @@
       content: "";
       position: absolute;
       display: block;
-      top: -39px;
+      top: -43px;
       left: 0;
       right: 0;
       width: 24px;
@@ -125,7 +125,7 @@
 /*Десктоп*/
 @media (min-width: $desktop-width) {
   .main-header__wrapper {
-    padding-top: 44px;
+    padding-top: 36px;
     justify-content: flex-start;
   }
 
@@ -133,5 +133,9 @@
     width: 202px;
     height: auto;
     margin-right: 540px;
+  }
+
+  .main-header__logo-1 {
+    padding-top: 16px;
   }
 }
