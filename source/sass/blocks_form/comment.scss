@@ -75,12 +75,14 @@
 /*Десктоп*/
 @media (min-width: $desktop-width) {
   .comment__title-wrapper {
+    margin-top: 50px;
+
     .comment__title {
       @include wrapper-desk();
 
       &::before {
-        left: 31px;
-        width: 259px;
+        left: 71px;
+        width: 261px;
         height: 52px;
       }
     }
@@ -88,5 +90,6 @@
 
   .comment__textarea {
     max-width: 1220px;
+    margin-bottom: 67px;
   }
 }

@@ -120,13 +120,18 @@
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {
+  .owner-contacts__legend-wrapper {
+    margin-top: 43px;
+    margin-bottom: 74px;
+  }
+
   .owner-contacts__legend {
     @include wrapper-desk();
 
     &::before {
-      width: 590px;
+      width: 592px;
       height: 52px;
-      left: 30px;
+      left: 71px;
     }
   }
 

@@ -91,6 +91,10 @@
     background-color: $basic-grey;
     margin-top: 76px;
 
+    &--index {
+      margin-top: -7px;
+    }
+
     &--form {
       margin-top: -12px;
     }
@@ -116,6 +120,7 @@
 
   .main-footer__address {
     width: 160px;
+    margin-bottom: 17px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
@@ -148,6 +153,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &--form {
+      margin-top: 55px;
+    }
   }
 
   .main-footer__wrapper {
@@ -156,9 +165,19 @@
 
   .main-footer__address {
     margin-left: -5px;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 20px;
     text-align: left;
+
+    &--form {
+      width: 151px;
+      margin-top: -5px;
+    }
+  }
+
+  .main-footer__city {
+    width: 100px;
   }
 
   .main-footer__map {
@@ -173,6 +192,13 @@
     margin-top: 95px;
     margin-left: 110px;
     max-width: 565px;
-    padding: 56px 80px;
+    padding: 43px 80px;
+
+    &--form {
+      width: 561px;
+      margin-left: 130px;
+      padding-top: 61px;
+      min-height: 198px;
+    }
   }
 }

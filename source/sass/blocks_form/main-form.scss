@@ -23,6 +23,8 @@
 
 .main-form__button {
   width: 100%;
+  max-width: 280px;
+  margin: auto;
 }
 
 .main-form__important {
@@ -56,11 +58,6 @@
 .main-form__addition {
   padding: 0;
   margin-top: 23px;
-}
-
-.main-form__button {
-  max-width: 280px;
-  margin: auto;
 }
 
 /*Планшет*/
@@ -125,7 +122,12 @@
 /*Десктоп*/
 @media (min-width: $desktop-width) {
   .main-form__tablet-wrapper {
-    max-width: 900px;
+    @include wrapper-desk();
+    margin-top: 38px;
+    margin-bottom: 68px;
+    max-width: 1440px;
+    grid-template-columns: 568px 200px;
+    column-gap: 84px;
   }
 
   .main-form__title {
@@ -140,6 +142,7 @@
   }
 
   .main-form__important {
+    margin-top: 27px;
     text-align: left;
   }
 
@@ -153,5 +156,9 @@
   .main-form__goal {
     margin: 0;
     padding: 0;
+  }
+
+  .main-form__button {
+    max-width: 568px;
   }
 }

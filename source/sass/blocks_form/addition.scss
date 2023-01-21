@@ -131,16 +131,16 @@
     @include wrapper-desk();
 
     &::before {
-      left: 31px;
-      width: 291px;
-      height: 26px;
+      left: 71px;
     }
   }
 
   .addition__variants {
     @include wrapper-desk();
-    display: flex;
-    gap: 32px 84px;
-    max-width: 1220px;
+    display: grid;
+    margin-top: 57px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px 80px;
+    max-width: 1440px;
   }
 }

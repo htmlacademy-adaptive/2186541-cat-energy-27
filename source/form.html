@@ -9,6 +9,9 @@
   <link rel="icon" href="img/favicon/fav_svg.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/fav_180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -23,25 +26,25 @@
         </picture>
         <img class="main-header__logo-image2" src="img/logo-main-2.png" width="101" height="18"
           alt="Магазин Cat energy">
-        <button class="main-header__toggle main-header__toggle--closed main-header__toggle--nojs" type="button"><span
-            class="visually-hidden">Открыть меню</span>
-        </button>
       </a>
+      <button class="main-header__toggle main-header__toggle--closed main-header__toggle--nojs" type="button"><span
+          class="visually-hidden">Открыть меню</span>
+      </button>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link" href="index.html">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--catalog" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
+              <a class="main-nav__link main-nav__link--catalog" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">
+            <li class="main-nav__item main-nav__item--catalog-active">
+              <a class="main-nav__link main-nav__link--catalog" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -101,8 +104,7 @@
         </div>
         <fieldset class="main-form__owner-contacts owner-contacts">
           <div class="owner-contacts__legend-wrapper">
-          <legend class="owner-contacts__legend wrapper">Контактные данные
-            (владельца кота)</legend>
+            <p class="owner-contacts__legend wrapper">Контактные данные (владельца кота)</p>
           </div>
           <ul class="owner-contacts__list">
             <li class="owner-contacts__field owner-contacts__email-field">
@@ -128,13 +130,16 @@
           </ul>
         </fieldset>
         <div class="main-form__comment comment">
-          <div class="comment__title-wrapper"><label class="comment__title" for="comment-textarea">Комментарий</label></div>
-          <textarea class="comment__textarea wrapper" id="comment-textarea" placeholder="Расскажите обо всех повадках кота"
-            name="comment-textarea" required></textarea>
+          <div class="comment__title-wrapper"><label class="comment__title" for="comment-textarea">Комментарий</label>
+          </div>
+          <textarea class="comment__textarea wrapper" id="comment-textarea"
+            placeholder="Расскажите обо всех повадках кота" name="comment-textarea" required></textarea>
         </div>
 
         <fieldset class="main-form__addition addition">
-          <div class="addition__legend-wrapper"><legend class="addition__legend wrapper">Дополнительно</legend></div>
+          <div class="addition__legend-wrapper">
+            <p class="addition__legend wrapper">Дополнительно</p>
+          </div>
           <ul class="addition__variants">
             <li class="addition__item">
               <label class="addition__control">
@@ -183,12 +188,15 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper main-footer__wrapper--form">
 
-      <div class="main-footer__text-group wrapper">
+      <div class="main-footer__text-group main-footer__text-group--form wrapper">
 
         <h2 class="main-footer__title">
           приглашаем<br>к сотрудничеству дилеров!
         </h2>
-        <p class="main-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="main-footer__address-wrapper">
+          <p class="main-footer__address main-footer__address--form">ул. Большая Конюшенная, д. 19/8 </p>
+          <p class=" main-footer__address main-footer__city">Санкт-Петербург</p>
+        </div>
       </div>
       <div class="main-footer__map map">
         <iframe class="map__google"
