@@ -7,6 +7,14 @@
   color: $special_dark-grey;
   text-decoration: none;
 
+  &:active {
+    opacity: 0.4;
+  }
+
+  &:active + .copyright__svg {
+    opacity: 0.4;
+  }
+
   &:hover + .copyright__svg,
   &:focus + .copyright__svg {
     color: $basic-green;
