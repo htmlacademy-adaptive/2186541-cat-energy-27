@@ -64,7 +64,29 @@
   padding: 12px 15px;
   margin-left: 10px;
   flex-grow: 1;
+  border: 1px solid $light-grey;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--disabled {
+    border: 1px solid #ff8282;
+
+    & + svg {
+      color: #ff8282;
+    }
+  }
 }
+
+.owner-contacts__name-field-input:active + svg {
+  color: $basic-green;
+}
+
 
 .owner-contacts__name-field-svg {
   position: absolute;
@@ -78,6 +100,10 @@
 @media (min-width: $tablet-width) {
   .owner-contacts {
     border: none;
+  }
+
+  .owner-contacts__legend-wrapper {
+    margin-top: 62px;
   }
 
   .owner-contacts__legend {

@@ -103,9 +103,9 @@
     display: grid;
     grid-template-columns: 282px 200px;
     column-gap: 49px;
-    margin-top: 33px;
+    margin-top: 31px;
     margin-bottom: 72px;
-    padding-left: 115px;
+    padding-left: 154px;
   }
 
   .main-form__addition {
@@ -132,7 +132,7 @@
 
   .main-form__title {
     @include wrapper-desk();
-    margin-top: 53px;
+    margin-top: 45px;
     margin-bottom: 58px;
   }
 

@@ -83,6 +83,12 @@
       margin-top: -11px;
     }
 
+    &--form-active {
+      border-bottom: 2px solid $basic-green;
+      padding-bottom: 8px;
+      margin-top: -14px;
+    }
+
     &--catalog-active {
       border-bottom: 2px solid $basic-green;
       padding-bottom: 8px;

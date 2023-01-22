@@ -34,6 +34,14 @@
   height: 30px;
   border-radius: 50%;
   border: 1px solid $special_grey;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .goal__control-input[type="radio"]:checked + .goal__control-mark {
@@ -59,6 +67,11 @@
     width: 630px;
     padding: 25px 27px;
     margin-top: 48px;
+    padding-bottom: 12px;
+  }
+
+  .goal__item {
+    margin-bottom: 10px;
   }
 
   .goal__control-label {

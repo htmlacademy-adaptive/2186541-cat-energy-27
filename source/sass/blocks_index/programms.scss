@@ -95,6 +95,10 @@
   border: none;
   text-align: left;
   background-color: transparent;
+
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 .programms__button-svg {
