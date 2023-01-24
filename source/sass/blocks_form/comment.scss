@@ -1,6 +1,6 @@
 .comment__title-wrapper {
   @include green-line();
-  margin-top: 8px;
+  margin-top: 11px;
   margin-bottom: 37px;
 
   .comment__title {
@@ -45,7 +45,7 @@
 /*Планшет*/
 @media (min-width: $tablet-width) {
   .comment__title-wrapper {
-    margin-top: 48px;
+    margin-top: 50px;
     margin-bottom: 76px;
 
     .comment__title {

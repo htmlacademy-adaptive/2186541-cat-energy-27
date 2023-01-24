@@ -62,7 +62,7 @@
   .catalog__title {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 35px;
+    padding-top: 50px;
     border: none;
 
     @include wrapper-tablet();
@@ -118,7 +118,7 @@
   .catalog__title {
     @include wrapper-desk();
     padding-left: 0;
-    margin-top: 14px;
+    margin-top: 10px;
   }
 
   .catalog__list {

@@ -78,7 +78,7 @@
     padding-left: 70px;
     padding-right: 70px;
     margin-bottom: 54px;
-    margin-top: 37px;
+    margin-top: 48px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -106,6 +106,7 @@
     margin-top: 31px;
     margin-bottom: 72px;
     padding-left: 154px;
+    padding-right: 10px;
   }
 
   .main-form__addition {
@@ -132,7 +133,7 @@
 
   .main-form__title {
     @include wrapper-desk();
-    margin-top: 45px;
+    margin-top: 55px;
     margin-bottom: 58px;
   }
 
