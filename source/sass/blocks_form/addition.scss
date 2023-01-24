@@ -75,6 +75,10 @@
   }
 }
 
+.addition__control-input[type="checkbox"]:focus + .addition__control-mark {
+  border: 1px solid $special_dark-grey;
+}
+
 .addition__control-input[type="checkbox"]:checked + .addition__control-mark {
   &::before {
     content: "";
