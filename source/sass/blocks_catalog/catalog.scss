@@ -64,6 +64,7 @@
     line-height: 60px;
     padding-top: 35px;
     border: none;
+    padding-top: 50px;
 
     @include wrapper-tablet();
   }
@@ -118,7 +119,7 @@
   .catalog__title {
     @include wrapper-desk();
     padding-left: 0;
-    margin-top: 14px;
+    margin-top: 10px;
   }
 
   .catalog__list {
