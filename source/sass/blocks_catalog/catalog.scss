@@ -62,9 +62,8 @@
   .catalog__title {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 35px;
-    border: none;
     padding-top: 50px;
+    border: none;
 
     @include wrapper-tablet();
   }
