@@ -42,6 +42,14 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:focus {
+    border: 1px solid $black;
+  }
+}
+
+.goal__control-input[type="radio"]:focus + .goal__control-mark {
+  border: 1px solid $special_dark-grey;
 }
 
 .goal__control-input[type="radio"]:checked + .goal__control-mark {
@@ -88,7 +96,7 @@
   .goal__control-input[type="radio"]:checked + .goal__control-mark {
     &::before {
       width: 20px;
-      height: 17px;
+      height: 20px;
     }
   }
 }
