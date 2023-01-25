@@ -1,4 +1,4 @@
-.additionals-card__wrapper {
+.additions-card__wrapper {
   @media (max-width: $tablet-width) {
     @include wrapper();
   }
@@ -45,7 +45,7 @@
     padding: 10px 38px 25px;
   }
 
-  .additionals-card__wrapper {
+  .additions-card__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,7 +91,7 @@
     padding: 0;
   }
 
-  .additionals-card__wrapper {
+  .additions-card__wrapper {
     flex-grow: 1;
     margin-bottom: 2px;
   }
