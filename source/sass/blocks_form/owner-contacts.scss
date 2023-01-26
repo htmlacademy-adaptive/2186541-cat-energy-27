@@ -66,7 +66,8 @@
   flex-grow: 1;
   border: 1px solid $light-grey;
 
-  &:hover {
+  &:hover,
+  &:focus, {
     border: 1px solid #bababa;
   }
 
@@ -74,8 +75,9 @@
     opacity: 0.3;
   }
 
-  &--disabled {
-    border: 1px solid #ff8282;
+  &--error {
+    outline: 2px solid #ff8282;
+    border: none;
 
     & + svg {
       color: #ff8282;

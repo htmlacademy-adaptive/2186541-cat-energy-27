@@ -7,7 +7,7 @@
 
 .slider__item--before {
   left: 50%;
-  top: 1px;
+  top: 4px;
   transform: translate(-100%, 0);
   width: 50%;
 }
@@ -15,7 +15,7 @@
 .slider__item--after {
   left: 50%;
   transform: translate(0, 0);
-  top: 1px;
+  top: 4px;
   width: 50%;
 }
 
@@ -23,7 +23,7 @@
   position: relative;
   overflow: hidden;
   width: 280px;
-  height: 256px;
+  height: 268px;
   margin: 0 auto;
 }
 
@@ -48,9 +48,16 @@
     width: 560px;
     height: 512px;
   }
-}
 
+  .slider__item img {
+    bottom: -4px;
+  }
 
-/*Десктоп*/
-@media (min-width: $desktop-width) {
+  .slider__item--before {
+    top: 142px;
+  }
+
+  .slider__item--after {
+    top: 142px;
+  }
 }

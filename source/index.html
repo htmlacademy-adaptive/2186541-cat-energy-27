@@ -27,10 +27,11 @@
         <img class="main-header__logo-image2" src="img/logo-main-2.png" width="101" height="18"
           alt="Магазин Cat energy">
       </a>
-      <!-- main-header__toggle--closed - для закрытого меню -->
-      <button class="main-header__toggle main-header__toggle--opened main-header__toggle--nojs" type="button"><span
-          class="visually-hidden">Открыть меню</span>
+      <!-- Стили для кнопки-бургера. main-header__toggle--closed - для закрытого меню; main-header__toggle--opened - для открытого меню. По умолчанию стоит main-header__toggle--nojs: версия при отключенном JS -->
+      <button class="main-header__toggle main-header__toggle--nojs" type="button"><span class="visually-hidden">Открыть
+          меню</span>
       </button>
+      <!-- Стили для меню. main-nav--nojs - при отключенном JS; main-nav--opened - при открытом меню; main-nav--closed - при закрытом меню. -->
       <nav class="main-nav main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -143,7 +144,7 @@
     </section>
 
     <section class="example">
-      <div class="example-wrapper wrapper">
+      <div class="example__wrapper wrapper">
         <h2 class="example__title">
           Живой пример
         </h2>
@@ -169,7 +170,8 @@
   width: 50%;">
             <div class="slider__box slider__box--before">
               <picture>
-                <source media="(min-width: 1440px)" srcset="img/before-tablet_1x.png 1x, img/before-tablet_2x.png 2x" width="560" height="512">
+                <source media="(min-width: 1440px)" srcset="img/before-tablet_1x.png 1x, img/before-tablet_2x.png 2x"
+                  width="560" height="512">
                 <source media="(min-width: 768px)" srcset="img/before-tablet_1x.png 1x, img/before-tablet_2x.png 2x"
                   width="560" height="512">
                 <img class="example__cat-img" width="280" height="256" src="img/before-mobile_1x.png"
@@ -177,27 +179,32 @@
               </picture>
             </div>
           </li>
-          <li class="example__before-after-image example__item-picture slider__item slider__item--after slider__item--current"
+          <li
+            class="example__before-after-image example__item-picture slider__item slider__item--after slider__item--current"
             style="left: 50%;
   width: 50%;">
             <div class="slider__box slider__box--after">
               <picture>
-                <source media="(min-width: 1440px)" srcset="img/after-tablet_1x.png 1x, img/after-tablet_2x.png 2x" width="560" height="512">
+                <source media="(min-width: 1440px)" srcset="img/after-tablet_1x.png 1x, img/after-tablet_2x.png 2x"
+                  width="560" height="512">
                 <source media="(min-width: 768px)" srcset="img/after-tablet_1x.png 1x, img/after-tablet_2x.png 2x"
                   width="560" height="512">
                 <img class="example__cat-img" width="280" height="256" src="img/after-mobile_1x.png"
                   srcset="img/after-mobile_2x.png 2x" alt="Стал худой кот">
               </picture>
             </div>
-          </li>
-          <li class="example__toggle-line">
-          </li>
-          <li class="example__toggle">
-            <button class="example__toggle-button" type="button">
-            <span class="visually-hidden">
-              Волшебный слайдер.
-            </span>
-          </button>
+            <div class="example__toggle-line"></div>
+            <div class="example__toggle">
+              <button class="example__toggle-button" type="button">
+                <svg class="example__toggle-svg" width="24" height="18" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#example_button"></use>
+                </svg>
+                <span class="visually-hidden">
+                  Волшебный слайдер.
+                </span>
+              </button>
+            </div>
           </li>
         </ul>
       </div>

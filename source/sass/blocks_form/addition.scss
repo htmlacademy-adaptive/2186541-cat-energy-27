@@ -79,6 +79,11 @@
   border: 1px solid $special_dark-grey;
 }
 
+.addition__control-input[type="checkbox"]:disabled + .addition__control-mark,
+.addition__control-input[type="checkbox"]:disabled + .addition__control-label {
+  opacity: 0.3;
+}
+
 .addition__control-input[type="checkbox"]:checked + .addition__control-mark {
   &::before {
     content: "";
@@ -129,6 +134,8 @@
   .addition__control-label {
     font-size: 20px;
     line-height: 30px;
+    word-wrap: break-word;
+    max-width: 161px;
   }
 
   .addition__control-mark {

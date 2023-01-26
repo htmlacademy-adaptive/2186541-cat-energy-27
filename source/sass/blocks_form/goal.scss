@@ -52,6 +52,11 @@
   border: 1px solid $special_dark-grey;
 }
 
+.goal__control-input[type="radio"]:disabled + .goal__control-mark,
+.goal__control-input[type="radio"]:disabled + .goal__control-label {
+  opacity: 0.3;
+}
+
 .goal__control-input[type="radio"]:checked + .goal__control-mark {
   &::before {
     content: "";

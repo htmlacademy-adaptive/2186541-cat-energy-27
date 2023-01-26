@@ -35,6 +35,16 @@
     border-color: $special_grey;
     outline: none;
   }
+
+  &:focus,
+  &:active {
+    outline: 2px solid $special_dark-grey;
+    box-shadow: none;
+  }
+
+  &--error {
+    outline: 2px solid $red;
+  }
 }
 
 /*Планшет*/
