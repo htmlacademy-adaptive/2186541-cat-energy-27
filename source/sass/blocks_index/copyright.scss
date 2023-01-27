@@ -35,6 +35,14 @@
   }
 }
 
+.copyright:hover .copyright__svg {
+  color: $basic-green;
+}
+
+.copyright:active {
+  opacity: 0.4;
+}
+
 
 /*Десктоп*/
 @media (min-width: $desktop-width) {

@@ -17,6 +17,8 @@
 }
 
 .goal__control-label {
+  max-width: 200px;
+  word-wrap: break-word;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -52,6 +54,11 @@
   border: 1px solid $special_dark-grey;
 }
 
+.goal__control-input[type="radio"]:disabled + .goal__control-mark,
+.goal__control-input[type="radio"]:disabled + .goal__control-label {
+  opacity: 0.3;
+}
+
 .goal__control-input[type="radio"]:checked + .goal__control-mark {
   &::before {
     content: "";
@@ -85,6 +92,8 @@
   .goal__control-label {
     font-size: 20px;
     line-height: 30px;
+    max-width: 400px;
+    word-wrap: break-word;
   }
 
   .goal__control-mark {
@@ -106,5 +115,10 @@
   .goal__variants {
     margin: 0;
     width: 568px;
+  }
+
+  .goal__control-label {
+    max-width: 300px;
+    word-wrap: break-word;
   }
 }

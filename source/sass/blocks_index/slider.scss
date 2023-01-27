@@ -1,0 +1,63 @@
+
+.slider__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.slider__item--before {
+  left: 50%;
+  top: 4px;
+  transform: translate(-100%, 0);
+  width: 50%;
+}
+
+.slider__item--after {
+  left: 50%;
+  transform: translate(0, 0);
+  top: 4px;
+  width: 50%;
+}
+
+.slider__box {
+  position: relative;
+  overflow: hidden;
+  width: 280px;
+  height: 268px;
+  margin: 0 auto;
+}
+
+.slider__item img {
+  position: absolute;
+  bottom: 12px;
+  transform: translate(-50%, 0);
+}
+
+.slider__item--before img {
+  left: 100%;
+}
+
+.slider__item--after img {
+  left: 0;
+}
+
+
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .slider__box {
+    width: 560px;
+    height: 512px;
+  }
+
+  .slider__item img {
+    bottom: -4px;
+  }
+
+  .slider__item--before {
+    top: 142px;
+  }
+
+  .slider__item--after {
+    top: 142px;
+  }
+}

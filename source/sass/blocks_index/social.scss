@@ -1,11 +1,13 @@
 .social__list {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0 auto;
   padding: 0;
   width: 128px;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
 }
 
 .social__link {
@@ -14,7 +16,7 @@
   }
 
   &--youtube {
-    padding-right: 6px;
+    padding-right: 4px;
   }
 }
 
@@ -29,5 +31,21 @@
 
   &:active {
     color: rgba($basic-green, 30%);
+  }
+}
+
+/*Планшет*/
+@media (min-width: $tablet-width) {
+  .social__list {
+    max-width: 140px;
+    justify-content: flex-start;
+  }
+}
+
+/*Десктоп*/
+@media (min-width: $desktop-width) {
+  .social__list {
+    max-width: 230px;
+    justify-content: flex-start;
   }
 }

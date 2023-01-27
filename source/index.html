@@ -27,10 +27,11 @@
         <img class="main-header__logo-image2" src="img/logo-main-2.png" width="101" height="18"
           alt="Магазин Cat energy">
       </a>
-      <!-- main-header__toggle--closed - для закрытого меню -->
-      <button class="main-header__toggle main-header__toggle--opened main-header__toggle--nojs" type="button"><span
-          class="visually-hidden">Открыть меню</span>
+      <!-- Стили для кнопки-бургера. main-header__toggle--closed - для закрытого меню; main-header__toggle--opened - для открытого меню. По умолчанию стоит main-header__toggle--nojs: версия при отключенном JS -->
+      <button class="main-header__toggle main-header__toggle--nojs" type="button"><span class="visually-hidden">Открыть
+          меню</span>
       </button>
+      <!-- Стили для меню. main-nav--nojs - при отключенном JS; main-nav--opened - при открытом меню; main-nav--closed - при закрытом меню. -->
       <nav class="main-nav main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -88,11 +89,12 @@
               <br>почти утратил способность лазить<br>
               по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <button class="programms__button">каталог slim
-              <svg class="programms__button-svg" width="30" height="12" viewBox="0 0 30 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="programms__button" href="#">каталог slim
+              <svg class="programms__button-svg" width="30" height="12" viewBox="0 0 30 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#arrow"></use>
               </svg>
-            </button>
+            </a>
           </li>
           <li class="programms__item programms__item--pro">
             <h3 class="programms__title">
@@ -102,11 +104,12 @@
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту
               нарастить необходимые мышцы!
             </p>
-            <button class="programms__button">каталог pro
-              <svg class="programms__button-svg" width="30" height="12" viewBox="0 0 30 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="programms__button" href="#">каталог pro
+              <svg class="programms__button-svg" width="30" height="12" viewBox="0 0 30 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#arrow"></use>
               </svg>
-            </button>
+            </a>
           </li>
         </ul>
       </div>
@@ -141,7 +144,7 @@
     </section>
 
     <section class="example">
-      <div class="example-wrapper wrapper">
+      <div class="example__wrapper wrapper">
         <h2 class="example__title">
           Живой пример
         </h2>
@@ -162,16 +165,49 @@
           </ul>
           <p class="example__final">Затраты на питание: 15 000 РУБ. </p>
         </div>
-        <div class="example__before-after">
-          <picture>
-            <source media="(min-width: 1440px)"
-              srcset="img/before-after_tablet_1x.png 1x, img/before-after_tablet_2x.png 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/before-after_tablet_1x.png 1x, img/before-after_tablet_2x.png 2x" width="560" height="512">
-            <img class="example__before-after-image" src="img/before-after_1x.png" srcset="img/before-after_2x.png 2x"
-              width="280" height="256" alt="Котик был толстый, а стал худой">
-          </picture>
-        </div>
+        <ul class="example__before-after slider">
+          <li class=" example__before-after-image example__item-picture slider__item slider__item--before" style="left: 50%;
+  width: 50%;">
+            <div class="slider__box slider__box--before">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/before-tablet_1x.png 1x, img/before-tablet_2x.png 2x"
+                  width="560" height="512">
+                <source media="(min-width: 768px)" srcset="img/before-tablet_1x.png 1x, img/before-tablet_2x.png 2x"
+                  width="560" height="512">
+                <img class="example__cat-img" width="280" height="256" src="img/before-mobile_1x.png"
+                  alt="<Был толстый кот>">
+              </picture>
+            </div>
+          </li>
+          <li
+            class="example__before-after-image example__item-picture slider__item slider__item--after slider__item--current"
+            style="left: 50%;
+  width: 50%;">
+            <div class="slider__box slider__box--after">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/after-tablet_1x.png 1x, img/after-tablet_2x.png 2x"
+                  width="560" height="512">
+                <source media="(min-width: 768px)" srcset="img/after-tablet_1x.png 1x, img/after-tablet_2x.png 2x"
+                  width="560" height="512">
+                <img class="example__cat-img" width="280" height="256" src="img/after-mobile_1x.png"
+                  srcset="img/after-mobile_2x.png 2x" alt="Стал худой кот">
+              </picture>
+            </div>
+            <div class="example__toggle">
+              <button class="example__toggle-button" type="button">
+                <svg class="example__toggle-svg" width="24" height="18" viewBox="0 0 24 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 0L0 9L8 18V0Z" fill="currentColor"/>
+                  <path d="M24 9L16 0V18L24 9Z" fill="currentColor"/>
+                  </svg>
+
+                <span class="visually-hidden">
+                  Волшебный слайдер.
+                </span>
+              </button>
+            </div>
+            <div class="example__toggle-line"></div>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
@@ -197,7 +233,8 @@
       </div>
       <div class="main-footer__wrapper-block wrapper">
         <a class="main-footer__logo-link" href="index.html">
-          <svg class="main-footer__logo-img" width="128" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <svg class="main-footer__logo-img" width="128" height="24" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite.svg#catenergy"></use>
           </svg>
         </a>

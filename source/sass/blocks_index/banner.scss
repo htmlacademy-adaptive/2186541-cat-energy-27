@@ -122,17 +122,22 @@
 @media (min-width: $desktop-width) {
   .banner {
     background-color: none;
+    position: static;
+
 
     ::before {
       display: block;
-      width: 720px;
+      position: absolute;
+      top: -131px;
+      right: 0;
+      left: 0;
       z-index: -2;
-      height: 112%;
+      height: 694px;
+      width: 50%;
       margin-left: 50%;
       background-image: url("../img/banner_desktop_1x.jpg");
       background-position: left;
       background-size: cover;
-      top: -141px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/banner_desktop_2x.jpg");

@@ -46,8 +46,78 @@
 }
 
 .example__before-after {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 44px;
+  width: 280px;
+  height: 256px;
   text-align: center;
-  padding-bottom: 40px;
+  object-fit: contain;
+}
+
+
+.example__before-after-image {
+  position: absolute;
+}
+
+.example__toggle-line {
+  position: absolute;
+  height: 254px;
+  width: 4px;
+  border-radius: 2px;
+  top: 127px;
+  left: 0;
+  background-color: $special_grey-3;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.example__toggle {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  z-index: 3;
+}
+
+.example__toggle-button {
+  position: relative;
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-color: $white;
+  border: 3px solid $special_grey-3;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+
+.example__toggle-svg {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+}
+
+.example__toggle:hover > .example__toggle-button {
+  border-color: $basic-green;
+}
+
+.example__toggle:active > .example__toggle-button {
+  border-color: $basic-green;
+  opacity: 0.6;
+}
+
+.example__toggle:hover ~ .example__toggle-line {
+  background-color: $basic-green;
+}
+
+.example__toggle:active ~ .example__toggle-line {
+  background-color: $basic-green;
+  opacity: 0.6;
+}
+
+.example__toggle:hover .example__toggle-svg {
+  color: $basic-green;
 }
 
 /*Планшет*/
@@ -56,7 +126,7 @@
     position: relative;
     border: 1px solid #e6e6e6;
     background-color: $white;
-    padding-bottom: 700px;
+    padding-bottom: 143px;
     padding-top: 41px;
 
     &::after {
@@ -106,11 +176,22 @@
   }
 
   .example__before-after {
-    position: absolute;
+    width: 560px;
+    height: 512px;
+    margin: auto;
     z-index: 1;
     right: 0;
     left: 0;
     bottom: 59px;
+  }
+
+  .example__toggle-line {
+    height: 512px;
+    top: 257px;
+  }
+
+  .example__toggle {
+    top: 240px;
   }
 }
 
@@ -125,8 +206,12 @@
 
     &::after {
       z-index: -1;
-      bottom: 0;
+      top: 161px;
     }
+  }
+
+  .example__wrapper {
+    position: relative;
   }
 
   .example__description {
@@ -139,6 +224,7 @@
   .example__tablet-div {
     flex-direction: column;
     justify-content: flex-start;
+    margin-bottom: 65px;
   }
 
   .example__results {
@@ -154,15 +240,16 @@
   }
 
   .example__before-after {
-    position: relative;
-    padding-bottom: 70px;
+    position: absolute;
+    padding-bottom: 0;
+    margin: 0;
+    left: auto;
+    right: 109px;
   }
 
   .example__before-after-image {
     position: absolute;
-    top: -471px;
-    right: 0;
-    width: 560px;
-    height: 512px;
+    margin: 0;
+    top: 40px;
   }
 }

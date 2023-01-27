@@ -37,6 +37,9 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  max-width: 170px;
+  word-wrap: break-word;
+  margin-top: 5px;
 }
 
 .addition__variants {
@@ -50,7 +53,7 @@
 
 .addition__control {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .addition__control-input {
@@ -77,6 +80,11 @@
 
 .addition__control-input[type="checkbox"]:focus + .addition__control-mark {
   border: 1px solid $special_dark-grey;
+}
+
+.addition__control-input[type="checkbox"]:disabled + .addition__control-mark,
+.addition__control-input[type="checkbox"]:disabled + .addition__control-label {
+  opacity: 0.3;
 }
 
 .addition__control-input[type="checkbox"]:checked + .addition__control-mark {
@@ -129,6 +137,9 @@
   .addition__control-label {
     font-size: 20px;
     line-height: 30px;
+    word-wrap: break-word;
+    max-width: 161px;
+    margin-top: 8px;
   }
 
   .addition__control-mark {
@@ -154,5 +165,11 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 40px 80px;
     max-width: 1440px;
+  }
+
+  .addition__control-label {
+    max-width: 170px;
+    word-wrap: break-word;
+    margin-top: 5px;
   }
 }

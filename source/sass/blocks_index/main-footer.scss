@@ -86,8 +86,8 @@
   .main-footer__wrapper-block {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 42px;
+    align-items: flex-start;
+    margin-top: 66px;
     padding-bottom: 59px;
 
     &--form {
@@ -143,12 +143,14 @@
   .main-footer__copyright {
     width: 167px;
     padding: 0;
+    margin-top: -10px;
   }
 
   .main-footer__social {
     border: none;
     width: 99px;
     margin-left: -10px;
+    padding-top: 0;
   }
 
   .main-footer__logo-img {
@@ -163,8 +165,8 @@
   .main-footer__wrapper-block {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 52px;
+    align-items: flex-start;
+    margin-top: 74px;
 
     &--form {
       margin-top: 55px;

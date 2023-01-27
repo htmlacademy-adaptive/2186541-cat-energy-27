@@ -65,6 +65,7 @@
           <div class="main-form__info info">
             <div class="info__field info__name-field ">
               <label class="info__name-field-label" for="name">ИМЯ:*</label>
+              <!-- Класс info__name-field-input--error - для поля с ошибкой -->
               <input class="info__name-field-input" type="text" id="name" name="name" placeholder="барсик">
             </div>
             <div class="info__field info__weight-field">
@@ -81,21 +82,21 @@
             <ul class="goal__variants wrapper">
               <li class="goal__item">
                 <label class="goal__control">
-                  <input class="visually-hidden goal__control-input" type="radio" name="slim" id="slim" checked>
+                  <input class="visually-hidden goal__control-input" type="radio" name="goal" id="slim" checked>
                   <span class="goal__control-mark"></span>
                   <span class="goal__control-label">похудение</span>
                 </label>
               </li>
               <li class="goal__item">
                 <label class="goal__control">
-                  <input class="visually-hidden goal__control-input" type="radio" name="pro" id="pro">
+                  <input class="visually-hidden goal__control-input" type="radio" name="goal" id="pro">
                   <span class="goal__control-mark"></span>
                   <span class="goal__control-label">набор массы</span>
                 </label>
               </li>
               <li class="goal__item goal__item--last">
                 <label class="goal__control">
-                  <input class="visually-hidden goal__control-input" type="radio" name="help-me" id="help-me">
+                  <input class="visually-hidden goal__control-input" type="radio" name="goal" id="help-me">
                   <span class="goal__control-mark"></span>
                   <span class="goal__control-label">не знаю (Нужен ваш совет)</span>
                 </label>
@@ -110,6 +111,7 @@
           <ul class="owner-contacts__list">
             <li class="owner-contacts__field owner-contacts__email-field">
               <label class="owner-contacts__name-field-label" for="email">E-mail:*</label>
+              <!-- Класс owner-contacts__name-field-input--error - для поля с ошибкой -->
               <input class="owner-contacts__name-field-input" type="text" id="email" name="email"
                 placeholder="kuklachev@gmail.com" required>
               <svg class="owner-contacts__name-field-svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
