@@ -79,13 +79,13 @@
   }
 
   .catalog__item-wrapper {
+    position: relative;
     padding: 161px 36px 39px 36px;
     margin-top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: none;
-    position: relative;
 
     &--last {
       display: flex;

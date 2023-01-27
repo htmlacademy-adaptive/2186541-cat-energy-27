@@ -95,6 +95,7 @@
   border: none;
   text-align: left;
   background-color: transparent;
+  color: $black;
 
   &:active {
     opacity: 0.4;
@@ -107,6 +108,10 @@
   &:hover {
     width: 34px;
   }
+}
+
+.programms__button:hover > .programms__button-svg {
+  width: 34px;
 }
 
 /*Планшетная версия*/

@@ -85,7 +85,7 @@
   }
 }
 
-.owner-contacts__name-field-input:active + svg {
+.owner-contacts__name-field-input:focus + svg {
   color: $basic-green;
 }
 

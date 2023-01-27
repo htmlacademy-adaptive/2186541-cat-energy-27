@@ -81,6 +81,7 @@
   .main-nav__item {
     border-top: none;
     padding-top: 23px;
+    white-space: nowrap;
 
     &--active {
       border-bottom: 2px solid $basic-green;
@@ -106,7 +107,10 @@
 @media (min-width: $desktop-width) {
   .main-nav__list {
     min-width: 477px;
+    max-width: 50%;
     padding-top: 13px;
+    flex-wrap: nowrap;
+    gap: 30px;
   }
 
   .main-nav__link {

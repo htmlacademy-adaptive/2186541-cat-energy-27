@@ -98,8 +98,26 @@
   left: 4px;
 }
 
-.example__toggle:hover + .example__toggle-button {
+.example__toggle:hover > .example__toggle-button {
+  border-color: $basic-green;
+}
+
+.example__toggle:active > .example__toggle-button {
+  border-color: $basic-green;
+  opacity: 0.6;
+}
+
+.example__toggle:hover ~ .example__toggle-line {
   background-color: $basic-green;
+}
+
+.example__toggle:active ~ .example__toggle-line {
+  background-color: $basic-green;
+  opacity: 0.6;
+}
+
+.example__toggle:hover .example__toggle-svg {
+  color: $basic-green;
 }
 
 /*Планшет*/
